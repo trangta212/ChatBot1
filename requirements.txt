@@ -1,0 +1,6 @@
+langchain
+faiss-cpu
+sentence-transformers
+underthesea
+transformers
+chromadb 
