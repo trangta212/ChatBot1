@@ -66,6 +66,8 @@ def process_json_custom(input_path, output_path, max_tokens=256):
         data = json.load(f)
     
     chunks = []
+    global_chunk_id = 0  # Chỉ số toàn cục cho chunk_id
+    
     for item in data:
         room_name = item.get("room_name", "")
         address = item.get("address", "")
@@ -85,7 +87,7 @@ def process_json_custom(input_path, output_path, max_tokens=256):
             continue
         
         split_parts = split_content_semantic(combined_text, max_tokens=max_tokens)
-        for i, part in enumerate(split_parts):
+        for part in split_parts:
             clean_part = clean_markdown(part).strip()
             if clean_part:
                 chunks.append({
@@ -101,9 +103,10 @@ def process_json_custom(input_path, output_path, max_tokens=256):
                     "longitude": longitude,
                     "type": type_,
                     "chunk_content": clean_part,
-                    "chunk_id": i,
-                    "url":url
+                    "chunk_id": global_chunk_id,  
+                    "url": url
                 })
+                global_chunk_id += 1
     
     with open(output_path, "w", encoding="utf-8") as f_out:
         json.dump(chunks, f_out, indent=2, ensure_ascii=False)
