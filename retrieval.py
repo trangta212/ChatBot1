@@ -43,11 +43,11 @@ process_keywords = {
     ],
     "phương thức thanh toán": [
         "quy trình thanh toán", "cách thanh toán", "thanh toán như thế nào", 
-        "trả tiền ra sao", "quy trình trả tiền", "thanh toán tiền phòng"
+        "trả tiền ra sao", "quy trình trả tiền", "thanh toán tiền phòng","thanh toán","trả tiền"
     ],
     "điều khoản hợp đồng": [
         "điều khoản hợp đồng", "hợp đồng thuê", "điều khoản thuê", 
-        "quy định hợp đồng", "điều khoản thuê phòng", "hợp đồng thuê nhà"
+        "quy định hợp đồng", "điều khoản thuê phòng", "hợp đồng thuê nhà","hợp đồng","điều khoản","quy định"
     ],
     "hướng dẫn đặt phòng": [
         "hướng dẫn đặt phòng", "cách đặt phòng", "đặt phòng như thế nào",
@@ -99,7 +99,6 @@ known_districts = [
 city_patterns = [
     # Hà Nội và biến thể
     "hà nội", "hanoi", "ha noi", "thủ đô", "thu do", "hn",
-    
     # Hồ Chí Minh và biến thể
     "hồ chí minh", "ho chi minh", "tp hcm", "tphcm", "hcm", "sài gòn", "sai gon", "tp.hcm", "sg", 
     "thành phố hồ chí minh", "tp. hồ chí minh", "thanh pho ho chi minh",

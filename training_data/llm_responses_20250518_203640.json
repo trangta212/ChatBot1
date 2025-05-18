@@ -1,0 +1,9 @@
+[
+  {
+    "query": "echo -e \"Tìm phòng trọ gần đại học bách khoa hà nội trong vòng bán kính 4km\" > queries.txt",
+    "timestamp": "2025-05-18T20:36:42.065943",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được vài phòng trọ phù hợp với yêu cầu của bạn nhé!\n\nDựa trên thông tin bạn cung cấp, mình thấy có 3 phòng trọ đáng chú ý:\n\n*   **Phòng 1:** Gần Đại học Kinh tế QD (cách ĐHBK Hà Nội khoảng 5-6km), giá 1.900.000đ/tháng, có kệ bếp, máy giặt, giờ giấc tự do. 🧺\n    [Xem chi tiết](http://localhost:3000/user/room-details/877)\n*   **Phòng 2:** Khu vực Kim Ngưu (cách ĐHBK Hà Nội khoảng 3-4km), giá 2.100.000đ/tháng, có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do. ❄️\n    [Xem chi tiết](http://localhost:3000/user/room-details/60)\n*   **Phòng 3:** Ngõ Gốc Đề, Minh Khai (cách ĐHBK Hà Nội khoảng 2-3km), giá 2.800.000đ/tháng, tiện nghi đầy đủ (gác, kệ bếp, máy lạnh, máy giặt, tủ lạnh), không chung chủ, có hầm để xe. 🚗\n    [Xem chi tiết](http://localhost:3000/user/room-details/924)\n\n**Lời khuyên:**\n\n*   Nếu bạn ưu tiên **tiện nghi** và **không chung chủ**, phòng 3 là lựa chọn tốt nhất, dù giá hơi cao một chút.\n*   Nếu bạn muốn **tiết kiệm chi phí** và vẫn đảm bảo các tiện ích cơ bản, phòng 1 hoặc phòng 2 là lựa chọn phù hợp.\n*   Phòng 2 có vị trí gần ĐHBK nhất đó nha! 🤩\n\nBạn thấy phòng nào ưng ý nhất nè? Nếu vẫn chưa tìm được phòng ưng ý, bạn có thể thử thay đổi tiêu chí tìm kiếm nha! 😉"
+    }
+  }
+]

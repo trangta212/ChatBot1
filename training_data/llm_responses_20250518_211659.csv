@@ -1,0 +1,29 @@
+query,timestamp,model,response
+"echo -e ""tôi muốn tìm phòng trọ ở đà nẵng có giá dưới 4 triệu""> queries.txt",2025-05-18T21:17:00.438841,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở Đà Nẵng đây ạ! Để mình tóm tắt giúp bạn nha:
+
+*   **Phòng 1:**
+    *   **Giá:** 2,300,000đ/tháng
+    *   **Địa chỉ:** 43/36 Nguyễn Đình Tứ, Quận Cẩm Lệ
+    *   **Ưu điểm:** Có điều hòa, nước nóng, nệm, bếp, wifi.
+    *   **Nhược điểm:** Không có tiện ích mở rộng.
+    *   **Link:** [http://localhost:3000/user/room-details/692](http://localhost:3000/user/room-details/692)
+*   **Phòng 2:**
+    *   **Giá:** 2,300,000đ/tháng
+    *   **Địa chỉ:** Nguyễn Chánh, Quận Liên Chiểu
+    *   **Ưu điểm:** Full nội thất, không chung chủ, giờ giấc tự do, có hầm để xe.
+    *   **Nhược điểm:** Chưa rõ tiện ích cụ thể.
+    *   **Link:** [http://localhost:3000/user/room-details/820](http://localhost:3000/user/room-details/820)
+*   **Phòng 3:**
+    *   **Giá:** 2,500,000đ/tháng
+    *   **Địa chỉ:** 159 Nguyễn Chánh, Quận Liên Chiểu
+    *   **Ưu điểm:** Full nội thất, có máy giặt, không chung chủ, giờ giấc tự do.
+    *   **Nhược điểm:** Giá hơi cao hơn một chút so với 2 phòng kia.
+    *   **Link:** [http://localhost:3000/user/room-details/742](http://localhost:3000/user/room-details/742)
+
+**Lời khuyên:**
+
+Nếu bạn ưu tiên giá rẻ và tiện nghi cơ bản, phòng 1 và phòng 2 là lựa chọn tốt. Phòng 2 có vẻ tiện lợi hơn với hầm xe riêng. Còn nếu bạn muốn có máy giặt và không gian rộng rãi hơn, phòng 3 sẽ phù hợp hơn dù giá cao hơn một chút nhé! 🏡
+
+Bạn thích phòng nào nhất ạ? Mình có thể giúp bạn tìm hiểu thêm thông tin chi tiết về phòng đó đó! 😉"

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "echo -e \"hợp đồng\" > queries.txt",
+    "timestamp": "2025-05-18T20:32:27.947944",
+    "responses": {
+      "gemini": "\n\nChào bạn! Mình sẽ giải thích quy trình hợp đồng thuê phòng trọ/căn hộ nhé:\n\n*   **Thời hạn thuê:** Thoả thuận với chủ trọ.\n*   **Tiền cọc:** 10% tiền thuê 1 tháng, sẽ được trả lại khi kết thúc hợp đồng nếu bạn không vi phạm.\n*   **Quyền và nghĩa vụ:**\n    *   **Bạn (bên thuê):** Đóng tiền thuê đúng hạn, giữ gìn đồ đạc.\n    *   **Chủ nhà:** Đảm bảo tiện ích như đã nói, sửa chữa các hư hỏng lớn.\n*   **Hợp đồng:** Cần báo trước 30 ngày nếu muốn chấm dứt, có thể bị phạt nếu không báo trước.\n\n**Quan trọng:** Đừng quên đọc kỹ hợp đồng trước khi ký nha! Nếu cần thêm thông tin, bạn cứ liên hệ với mình hoặc đội ngũ hỗ trợ của website nhé! 😊\n"
+    }
+  }
+]

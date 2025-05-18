@@ -1,0 +1,40 @@
+query,timestamp,model,response
+"echo -e ""Tìm phòng trọ gần đại học bách khoa hà nội trong vòng bán kính 4km"" > queries.txt",2025-05-18T20:34:10.228810,gemini,"
+Chào bạn! 💖 Mình đã tìm được vài phòng trọ phù hợp với yêu cầu của bạn nhé! Tuy nhiên, theo thông tin hiện có, các phòng này chưa thực sự gần Đại học Bách Khoa Hà Nội (khoảng cách có thể vượt quá 4km). Mình sẽ tóm tắt và so sánh giúp bạn nha:
+
+**Tóm tắt các lựa chọn:**
+
+*   **Phòng 1: Phòng trọ cạnh Đại học Kinh tế QD** 🏡
+    *   Giá: 1,900,000đ/tháng
+    *   Ưu điểm: Giá cả phải chăng, có kệ bếp, máy giặt, giờ giấc tự do.
+    *   Nhược điểm: Khoảng cách đến Đại học Bách Khoa có thể xa hơn 4km.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/877)
+*   **Phòng 2: Cho thuê phòng trọ tại ngõ 121 Kim Ngưu** ❄️
+    *   Giá: 2,100,000đ/tháng
+    *   Ưu điểm: Có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do.
+    *   Nhược điểm: Khoảng cách đến Đại học Bách Khoa có thể xa hơn 4km, giá hơi cao hơn phòng 1.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/60)
+*   **Phòng 3: CCMN PHÒNG TRỌ NGÕ GỐC ĐỀ, MINH KHAI** 🤩
+    *   Giá: 2,800,000đ/tháng
+    *   Ưu điểm: Đầy đủ tiện nghi (gác, kệ bếp, máy lạnh, máy giặt, tủ lạnh), không chung chủ, có hầm để xe, giờ giấc tự do.
+    *   Nhược điểm: Giá cao nhất trong 3 phòng, khoảng cách đến Đại học Bách Khoa có thể xa hơn 4km.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/924)
+
+**Bảng so sánh nhanh:**
+
+| Tiện ích        | Phòng 1 | Phòng 2 | Phòng 3 |
+| --------------- | ------- | ------- | ------- |
+| Giá             | 1.9tr   | 2.1tr   | 2.8tr   |
+| Máy lạnh        | ❌       | ✅       | ✅       |
+| Máy giặt        | ✅       | ✅       | ✅       |
+| Không chung chủ | ❌       | ✅       | ✅       |
+| Các tiện ích khác | Kệ bếp  |         | Gác, tủ lạnh, hầm xe |
+
+**Lời khuyên:**
+
+Nếu bạn ưu tiên giá cả và tiện ích cơ bản, phòng 1 là lựa chọn tốt. Nếu bạn muốn thoải mái hơn với máy lạnh và không gian riêng tư, phòng 2 sẽ phù hợp hơn. Còn nếu bạn muốn đầy đủ tiện nghi và sẵn sàng chi trả nhiều hơn, phòng 3 là lựa chọn lý tưởng.
+
+Tuy nhiên, vì bạn muốn tìm phòng gần Đại học Bách Khoa, mình khuyên bạn nên:
+
+*   **Thay đổi tiêu chí tìm kiếm:** Mở rộng bán kính tìm kiếm hoặc tìm các phòng gần các địa điểm khác xung quanh Đại học Bách Khoa.
+*   **Liên hệ với mình:** Bạn có thể cung cấp thêm thông tin về ngân sách và các yêu cầu khác để mình tìm kiếm chính xác hơn nhé! 😉"
