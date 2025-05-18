@@ -1,0 +1,33 @@
+query,timestamp,model,response
+"echo -e ""Tôi muốn tìm phòng trọ ở quận Tân bình thành phố hồ chí minh trong khoảng từ 3 triệu đến 6 triệu "" > queries.txt",2025-05-18T16:17:30.657857,gemini,"
+Chào bạn! 💖 Mình đã xem qua các phòng trọ ở quận Tân Bình rồi nè. Tuy nhiên, có vẻ như các phòng hiện có không nằm trong khoảng giá từ 3 - 6 triệu mà bạn mong muốn. 😥
+
+Dưới đây là tóm tắt các lựa chọn phù hợp nhất mình tìm được, cùng với so sánh và lời khuyên nha:
+
+**Bảng so sánh:**
+
+| Phòng | Giá (VNĐ/tháng) | Diện tích (m²) | Tiện ích nổi bật | Ưu điểm | Nhược điểm |
+|---|---|---|---|---|---|
+| Ký túc xá Bạch Đằng | 1,200,000 | 35 | Full nội thất, không chung chủ, giờ giấc tự do | Diện tích lớn, đầy đủ tiện nghi, không cần cọc | Giá hơi thấp so với nhu cầu của bạn |
+| Ký túc xá nữ Bàu Cát 2 | 1,300,000 | 20 | Bao phí dịch vụ | Giá hợp lý, đã bao gồm điện nước | Diện tích nhỏ, ít tiện ích |
+| Ký túc xá Quách Văn Tuấn | 1,500,000 | 12 | Gần Học Viện Hàng Không, bao điện nước, có bảo vệ | Vị trí thuận tiện, an toàn, bao điện nước | Diện tích nhỏ nhất trong 3 phòng |
+
+**Lời khuyên:**
+
+*   Nếu bạn ưu tiên **diện tích rộng rãi và đầy đủ tiện nghi**, phòng Ký túc xá Bạch Đằng là lựa chọn tốt dù giá hơi thấp so với yêu cầu.
+*   Nếu bạn muốn **tiết kiệm chi phí** và không quá quan trọng về tiện ích, Ký túc xá nữ Bàu Cát 2 có thể phù hợp.
+*   Nếu bạn là sinh viên **Học Viện Hàng Không** và muốn ở gần trường, Ký túc xá Quách Văn Tuấn là lựa chọn thuận tiện.
+
+**Bạn có thể tham khảo thêm thông tin chi tiết tại các link sau:**
+
+*   Ký túc xá Bạch Đằng: [http://localhost:3000/user/room-details/86](http://localhost:3000/user/room-details/86)
+*   Ký túc xá nữ Bàu Cát 2: [http://localhost:3000/user/room-details/124](http://localhost:3000/user/room-details/124)
+*   Ký túc xá Quách Văn Tuấn: [http://localhost:3000/user/room-details/6](http://localhost:3000/user/room-details/6)
+
+Vì không có phòng nào trong khoảng giá bạn mong muốn, bạn có thể thử:
+
+*   **Mở rộng khoảng giá:** Xem xét các phòng có giá cao hơn một chút.
+*   **Thay đổi tiêu chí:** Ưu tiên các tiện ích quan trọng nhất của bạn.
+*   **Liên hệ trực tiếp với chủ nhà:** Có thể có những phòng chưa được đăng trên website.
+
+Chúc bạn sớm tìm được phòng ưng ý nhé! 🍀😊"

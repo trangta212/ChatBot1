@@ -1,0 +1,44 @@
+[
+    {
+      "chunk_id": "process_1",
+      "type": "process_info",
+      "category": "hướng dẫn đăng bài",
+      "content": "Hướng dẫn đăng bài cho thuê phòng:\n1. Đăng ký tài khoản trên hệ thống.\n2. Đăng nhập và vào mục 'Đăng bài'.\n3. Nhập thông tin phòng: địa chỉ, giá, diện tích, tiện ích (điều hòa, máy giặt, v.v.), hình ảnh.\n4. Nhập thông tin cá nhân theo CCCD để đảm bảo quá trình tiến hành hợp đồng thông tin chính xác.\n5. Thanh toán phí đăng bài(tuỳ theo giá thành đăng bài vị trí bài đăng sẽ hiện thị từ cao đến thấp).\nLưu ý: Bài đăng phải có ít nhất 3 hình ảnh rõ ràng và thông tin chính xác."
+    },
+    {
+      "chunk_id": "process_2",
+      "type": "process_info",
+      "category": "phương thức thanh toán",
+      "content": "Hiện tại có 2 phương thức thanh toán:\n1. Chuyển khoản ngân hàng: Bạn có thể quyét QR trên màn hình và thanh toán thông qua ngân hàng.\n2. Thanh toán qua ví điện tử: Hiện tại Web đang hỗ trợ sử dụng các ví điện tử như MoMo."
+    },
+    {
+      "chunk_id": "process_3",
+      "type": "process_info",
+      "category": "điều khoản hợp đồng",
+      "content": "Điều khoản hợp đồng thuê phòng:\n1. Thời hạn thuê: Tuỳ vào yêu cầu của chủ trọ.\n2. Tiền cọc: 10% của tiền thuê trọ trong 1 tháng, hoàn cọc sau khi kết thúc hợp đồng nếu không vi phạm.\n3. Trách nhiệm bên thuê: Thanh toán tiền thuê đúng hạn, giữ gìn tài sản.\n4. Trách nhiệm chủ nhà: Cung cấp tiện ích như cam kết, sửa chữa hư hỏng lớn.\n5. Chấm dứt hợp đồng: Báo trước 30 ngày, có thể phạt nếu vi phạm.\nLưu ý: Đọc kỹ hợp đồng trước khi ký."
+    },
+    {
+      "chunk_id": "process_4",
+      "type": "process_info",
+      "category": "hướng dẫn đặt phòng",
+      "content": "Hướng dẫn đặt phòng trên hệ thống:\n1. Khi xem tin đăng phòng trọ, bạn có thể nhấn nút 'Liên hệ' để nhắn tin trực tiếp với chủ trọ.\n2. Nếu đã quyết định thuê, bạn có thể nhấn nút 'Đặt phòng'.\n3. Hệ thống sẽ yêu cầu bạn thanh toán tiền đặt cọc — tương đương 10% giá thuê 1 tháng của phòng trọ.\n4. Sau khi thanh toán, chủ trọ sẽ có tối đa 1 ngày để xác nhận đồng ý hoặc từ chối yêu cầu đặt phòng.\n5. Nếu chủ trọ xác nhận, hệ thống sẽ gửi thông báo và hướng dẫn ký hợp đồng. Thông tin hợp đồng sẽ được gửi đến email mà bạn đã dùng để đăng ký tài khoản.\n6. Nếu chủ trọ từ chối, hệ thống sẽ hoàn lại tiền đặt cọc vào tài khoản của bạn.\nLưu ý: Vui lòng đảm bảo email đăng ký chính xác để nhận hợp đồng và các thông báo quan trọng."
+    },
+    {
+      "chunk_id": "process_6",
+      "type": "process_info",
+      "category": "Quản lý bài đăng",
+      "content": "Quản lý bài đăng cho thuê:\n1. Để quản lý bài đăng, bạn cần đăng nhập vào tài khoản cá nhân.\n2. Vào mục 'Quản lý' để xem danh sách các bài đăng đã tạo.\n3. Bạn có thể chỉnh sửa thông tin bài đăng, thêm hình ảnh hoặc xóa bài đăng nếu bài đăng còn hạn và chưa được xác nhận đặt cọc.\n4. Nếu có người đặt phòng, bạn sẽ nhận được thông báo qua email và trên hệ thống.\n5. Để tăng khả năng tìm kiếm, hãy thường xuyên cập nhật thông tin và hình ảnh mới cho bài đăng của bạn."
+    },
+    {
+      "chunk_id": "process_8",
+      "type": "process_info",
+      "category": "chính sách hoàn tiền",
+      "content": "Chính sách hoàn tiền đặt cọc:\n1. Nếu chủ trọ từ chối yêu cầu đặt phòng, bạn sẽ được hoàn lại 100% số tiền cọc.\n2. Nếu bạn hủy đặt phòng trước khi chủ trọ xác nhận, bạn sẽ không được hoàn lại số tiền bạn đã đặt cọc.\n3. Trong trường hợp bất khả kháng (chủ trọ huỷ đột ngột, phòng không đúng mô tả), hãy liên hệ hỗ trợ để được hoàn tiền.\nLưu ý: Hoàn tiền có thể mất từ 1–3 ngày tùy ngân hàng hoặc phương thức thanh toán."
+    },
+    {
+      "chunk_id": "process_9",
+      "type": "process_info",
+      "category": "lưu ý khi đăng bài",
+      "content": "Lưu ý khi đăng bài cho thuê:\n1. Nội dung bài đăng phải trung thực, không phóng đại.\n2. Cần có ít nhất 3 hình ảnh rõ nét, đúng thực tế.\n3. Không đăng cùng một phòng nhiều lần trong vòng 7 ngày.\n4. Không sử dụng từ ngữ phản cảm, sai chính tả, hoặc gây hiểu nhầm.\n5. Bài đăng vi phạm sẽ bị gỡ mà không cần báo trước.\nLưu ý: Các tài khoản vi phạm nhiều lần có thể bị khóa vĩnh viễn."
+    }
+  ]

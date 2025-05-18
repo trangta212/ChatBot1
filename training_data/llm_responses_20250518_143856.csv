@@ -1,0 +1,35 @@
+query,timestamp,model,response
+"echo -e ""Tôi muốn tìm phòng trọ ở quận 10 thành phố hồ chí minh giá dưới 5 triệu"" > queries.txt",2025-05-18T14:38:57.088980,gemini," trợ lý của bạn.
+
+Chào bạn! 👋 Mình thấy bạn đang tìm phòng trọ ở Quận 1, TP.HCM với giá dưới 5 triệu đó! Mình đã tìm được 4 phòng phù hợp với bạn, để mình tóm tắt và so sánh giúp nha:
+
+**Tóm tắt các lựa chọn:**
+
+| Phòng | Giá (VNĐ/tháng) | Diện tích (m²) | Vị trí | Tiện ích nổi bật |
+|---|---|---|---|---|
+| 1. SLEEPBOX Bùi Viện | 1,300,000 | 35 | Bùi Viện, Q1 | Không chung chủ, giờ giấc tự do, đầy đủ tiện nghi (kệ bếp, máy lạnh, máy giặt, tủ lạnh, hầm xe) |
+| 2. KTX đẹp Phạm Ngũ Lão | 1,600,000 | 30 | Phạm Ngũ Lão, Q1 | Bếp chung, máy giặt, khóa vân tay, nhân viên dọn vệ sinh |
+| 3. SLEEPBOX Hai Bà Trưng - Võ Thị Sáu | 2,000,000 | 40 | Võ Thị Sáu, Q1 | Không chung chủ, giờ giấc tự do, đầy đủ tiện nghi (kệ bếp, máy lạnh, máy giặt, tủ lạnh, hầm xe) |
+| 4. Phòng có máy lạnh, nội thất Võ Văn Kiệt | 2,000,000 | 15 | Võ Văn Kiệt, Q1 | Máy lạnh, nội thất cơ bản, máy giặt, vân tay |
+
+**So sánh và lời khuyên:**
+
+*   **Nếu bạn ưu tiên giá rẻ nhất và tiện nghi đầy đủ:** Phòng 1 (SLEEPBOX Bùi Viện) là lựa chọn tốt nhất với giá 1,3 triệu và đầy đủ tiện nghi. Vị trí cũng rất thuận tiện nếu bạn thích khu vực sôi động, gần phố đi bộ Bùi Viện. 🥳
+*   **Nếu bạn thích không gian riêng tư và tiện nghi cơ bản:** Phòng 2 (KTX đẹp Phạm Ngũ Lão) với giá 1,6 triệu cũng đáng cân nhắc. Bạn sẽ có bếp chung và máy giặt, lại được đảm bảo an ninh với khóa vân tay.
+*   **Nếu bạn muốn không gian rộng rãi và tiện nghi cao cấp:** Phòng 3 (SLEEPBOX Hai Bà Trưng - Võ Thị Sáu) là lựa chọn phù hợp với giá 2 triệu. Diện tích lớn hơn và đầy đủ tiện nghi sẽ mang lại sự thoải mái cho bạn. 🤩
+*   **Nếu bạn cần một phòng nhỏ gọn, có máy lạnh và nội thất cơ bản:** Phòng 4 (Phòng có máy lạnh, nội thất Võ Văn Kiệt) với giá 2 triệu có thể đáp ứng nhu cầu của bạn. Tuy nhiên, phòng này không có nhiều tiện ích mở rộng.
+
+**Lời khuyên:**
+
+*   Bạn nên xem xét kỹ vị trí của từng phòng để đảm bảo thuận tiện cho việc đi làm/học tập và các hoạt động thường ngày.
+*   Nếu bạn có xe máy, hãy kiểm tra xem phòng có chỗ để xe không (phòng 1 và 3 có hầm xe).
+*   Nếu bạn thích sự yên tĩnh, phòng 1 (Bùi Viện) có thể hơi ồn ào vào ban đêm.
+
+Để bạn tiện tham khảo thêm thông tin chi tiết, mình để link các phòng ở đây nha:
+
+*   Phòng 1: [http://localhost:3000/user/room-details/229](http://localhost:3000/user/room-details/229)
+*   Phòng 2: [http://localhost:3000/user/room-details/300](http://localhost:3000/user/room-details/300)
+*   Phòng 3: [http://localhost:3000/user/room-details/137](http://localhost:3000/user/room-details/137)
+*   Phòng 4: [http://localhost:3000/user/room-details/422](http://localhost:3000/user/room-details/422)
+
+Chúc bạn sớm tìm được phòng ưng ý nhé! 🥰 Nếu bạn có bất kỳ câu hỏi nào khác, đừng ngần ngại hỏi mình nha!"

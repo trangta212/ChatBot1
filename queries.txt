@@ -1,0 +1,3 @@
+echo -e "Tôi muốn tìm phòng trọ ở thành phố hồ chí minh có giá trên 3 triệu " > queries.txt
+
+

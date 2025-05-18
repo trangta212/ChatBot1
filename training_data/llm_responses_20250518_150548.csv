@@ -1,0 +1,33 @@
+query,timestamp,model,response
+"echo -e ""Tôi muốn tìm phòng trọ ở quận 10 thành phố hồ chí minh giá dưới 10 triệu"" > queries.txt",2025-05-18T15:05:49.906077,gemini," trợ lý của bạn đây! 💖 Mình thấy bạn đang tìm phòng trọ ở Quận 1, TP.HCM với giá dưới 10 triệu đồng, đúng không nè? Mình đã tìm được 4 phòng phù hợp với bạn đây, để mình tóm tắt và so sánh giúp nha!
+
+**Tóm tắt các lựa chọn:**
+
+| Phòng | Giá (VNĐ/tháng) | Diện tích (m²) | Vị trí | Tiện ích nổi bật |
+|---|---|---|---|---|
+| 1. SLEEPBOX Bùi Viện | 1,300,000 | 35 | Bùi Viện, Q1 | Không chung chủ, giờ giấc tự do, đầy đủ tiện nghi (kệ bếp, máy lạnh, máy giặt, tủ lạnh, hầm xe) |
+| 2. KTX đẹp Phạm Ngũ Lão | 1,600,000 | 30 | Phạm Ngũ Lão, Q1 | Bếp chung, máy giặt, khóa vân tay, có nhân viên dọn dẹp |
+| 3. SLEEPBOX Hai Bà Trưng - Võ Thị Sáu | 2,000,000 | 40 | Hai Bà Trưng - Võ Thị Sáu, Q1 | Không chung chủ, giờ giấc tự do, đầy đủ tiện nghi (kệ bếp, máy lạnh, máy giặt, tủ lạnh, hầm xe) |
+| 4. Phòng có máy lạnh, nội thất gần Bùi Viện | 2,000,000 | 15 | Võ Văn Kiệt, Q1 | Máy lạnh, nội thất cơ bản, máy giặt, vân tay |
+
+**So sánh và lời khuyên:**
+
+*   **Nếu bạn ưu tiên giá rẻ nhất:** Phòng 1 (SLEEPBOX Bùi Viện) với giá 1,3 triệu là lựa chọn tốt nhất. Vị trí cực kỳ thuận tiện ở khu vực Bùi Viện, lại có đầy đủ tiện nghi và không chung chủ nữa đó! 🥳
+*   **Nếu bạn thích không gian rộng rãi:** Phòng 3 (SLEEPBOX Hai Bà Trưng - Võ Thị Sáu) có diện tích lớn nhất (40m²) và cũng đầy đủ tiện nghi. Tuy nhiên, giá sẽ cao hơn một chút. 🏡
+*   **Nếu bạn thích sự tiện lợi và an toàn:** Phòng 2 (KTX đẹp Phạm Ngũ Lão) có khóa vân tay và nhân viên dọn dẹp, giúp bạn tiết kiệm thời gian và công sức.
+*   **Nếu bạn cần một phòng nhỏ gọn, tiện nghi cơ bản:** Phòng 4 (Phòng có máy lạnh, nội thất gần Bùi Viện) phù hợp với bạn. Tuy nhiên, diện tích phòng khá nhỏ (15m²). 😥
+
+**Lời khuyên:**
+
+*   Vì bạn muốn tìm phòng giá dưới 10 triệu, cả 4 phòng đều nằm trong tầm giá của bạn.
+*   Hãy xem xét kỹ các tiện ích mà bạn cần và quan trọng nhất là vị trí để chọn được phòng phù hợp nhất nhé!
+*   Nếu có thể, bạn nên đến xem phòng trực tiếp để cảm nhận rõ hơn về không gian và tiện nghi.
+
+**Link chi tiết các phòng:**
+
+*   Phòng 1: [http://localhost:3000/user/room-details/229](http://localhost:3000/user/room-details/229)
+*   Phòng 2: [http://localhost:3000/user/room-details/300](http://localhost:3000/user/room-details/300)
+*   Phòng 3: [http://localhost:3000/user/room-details/137](http://localhost:3000/user/room-details/137)
+*   Phòng 4: [http://localhost:3000/user/room-details/422](http://localhost:3000/user/room-details/422)
+
+Chúc bạn sớm tìm được phòng ưng ý nha! 🥰 Nếu bạn cần thêm thông tin gì, cứ hỏi mình nhé!"

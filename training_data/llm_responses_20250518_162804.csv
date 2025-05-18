@@ -1,0 +1,2 @@
+query,timestamp,model,response
+"echo -e ""Tôi muốn tìm phòng trọ ở thành phố hồ chí minh có giá trên 3 triệu "" > queries.txt",2025-05-18T16:28:05.314674,gemini,:
