@@ -1,0 +1,17 @@
+query,timestamp,model,response
+Tôi muốn thuê phòng trọ ở quận 1 thành phố hồ chí minh giá dưới 5 triệu,2025-05-19T21:49:24.736615,gemini,"
+
+Chào bạn! 💖 Mình thấy có 3 phòng phù hợp với tiêu chí của bạn ở quận 1, giá dưới 5 triệu nè:
+
+*   **Phòng 1: SLEEPBOX, KTX FULL NỘI THẤT BÙI VIỆN, Q1.** Giá 1,3tr/tháng, tiện ích siêu xịn: kệ bếp, máy lạnh, máy giặt, tủ lạnh, không chung chủ, giờ giấc tự do, có hầm xe. 🤩
+    *   [Link chi tiết](http://localhost:3000/user/room-details/229)
+*   **Phòng 2: 1tr6 có ngay ktx đẹp tại trung tâm quận 1.** Giá 1,6tr/tháng, vị trí trung tâm nhưng không có tiện ích mở rộng. 😔
+    *   [Link chi tiết](http://localhost:3000/user/room-details/300)
+*   **Phòng 3: SLEEPBOX RỘNG RÃI TIỆN NGHI NGAY NGÃ TƯ HAI BÀ TRƯNG _ VÕ THỊ SÁU ,QUẬN 1.** Giá 2tr/tháng, tiện ích tương tự phòng 1, vị trí gần ngã tư Hai Bà Trưng - Võ Thị Sáu. ✨
+    *   [Link chi tiết](http://localhost:3000/user/room-details/137)
+
+**Lời khuyên:**
+
+Nếu bạn ưu tiên tiện ích và không gian riêng tư, phòng 1 và phòng 3 là lựa chọn tuyệt vời! Phòng 3 có vẻ hơi đắt hơn một chút nhưng tiện ích cũng đầy đủ hơn. Còn phòng 2 thì giá cả phải chăng, phù hợp nếu bạn không quá quan trọng tiện ích. 🥰
+
+Bạn thích phong cách nào hơn nè? Nếu vẫn chưa ưng ý, bạn có thể thử thay đổi tiêu chí tìm kiếm nha! 😉"

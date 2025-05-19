@@ -1,0 +1,24 @@
+query,timestamp,model,response
+Tôi muốn thuê phòng trọ giá dưới 4 triệu ở Hai Bà Trưng Hà Nội,2025-05-19T21:32:46.382370,gemini,"
+
+Chào bạn! 💖 Mình thấy có 2 phòng trọ phù hợp với yêu cầu của bạn nè:
+
+**1. Phòng trọ cạnh Đại học Kinh tế QD:**
+
+*   **Giá:** 1,900,000đ/tháng - Rất hợp lý luôn đó ạ! 🤩
+*   **Địa chỉ:** 63/41/27 Phố Vọng, Hai Bà Trưng
+*   **Ưu điểm:** Giá rẻ, có kệ bếp, máy giặt, giờ giấc tự do.
+*   **Nhược điểm:** Có thể không có máy lạnh.
+*   **Link chi tiết:** [http://localhost:3000/user/room-details/877](http://localhost:3000/user/room-details/877)
+
+**2. Phòng trọ tại ngõ 121 Kim Ngưu:**
+
+*   **Giá:** 2,100,000đ/tháng - Vẫn nằm trong tầm giá bạn mong muốn. 😉
+*   **Địa chỉ:** Kim Ngưu, Hai Bà Trưng
+*   **Ưu điểm:** Có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do.
+*   **Nhược điểm:** Giá hơi cao hơn phòng đầu một chút.
+*   **Link chi tiết:** [http://localhost:3000/user/room-details/60](http://localhost:3000/user/room-details/60)
+
+**Lời khuyên:** Nếu bạn ưu tiên giá rẻ và có sẵn các tiện ích cơ bản như bếp, máy giặt thì phòng cạnh Đại học Kinh tế QD là lựa chọn tuyệt vời. Còn nếu bạn muốn có máy lạnh và sự riêng tư hơn thì phòng ở Kim Ngưu sẽ phù hợp hơn đó! 🏠
+
+Bạn thích phòng nào hơn nè? 🥰"

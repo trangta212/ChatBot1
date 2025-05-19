@@ -9,6 +9,8 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from retrieval import retrieve_documents, analyze_query
 
+
+
 # Load biến môi trường từ file .env
 load_dotenv()
 OPENROUTER_KEY = os.getenv("OPENROUTER_KEY")
@@ -28,7 +30,7 @@ class LLMTrainer:
         self.results = []
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.output_file = os.path.join(self.output_dir, f"llm_responses_{self.timestamp}.csv")
-
+            
     def format_context_for_prompt(self, documents):
         context = []
         for i, doc in enumerate(documents):
@@ -133,6 +135,7 @@ Hãy tóm tắt các lựa chọn và đưa ra lời khuyên."""
 
         for model_id, config in self.models.items():
             print(f"\n--- {model_id} ---")
+            start_llm = time.time()
             response = self.get_openrouter_response(config["model"], system_prompt, user_prompt)
             results["responses"][model_id] = response
             time.sleep(1)
@@ -170,11 +173,14 @@ Hãy tóm tắt các lựa chọn và đưa ra lời khuyên."""
         print(f"\nĐã lưu kết quả vào {self.output_file}")
 
 def main():
+  
     parser = argparse.ArgumentParser()
-    parser.add_argument('--query', type=str)
-    parser.add_argument('--file', type=str)
-    parser.add_argument('--output', type=str, default='training_data')
-    parser.add_argument('--topk', type=int, default=5)
+    parser.add_argument("--query", type=str, required=True)
+    parser.add_argument("--file", type=str)
+    parser.add_argument("--topk", type=int, default=3)
+
+    parser.add_argument("--output", type=str, default="training_data")  # Nếu bạn cần thư mục output
+
     args = parser.parse_args()
 
     trainer = LLMTrainer(output_dir=args.output)
@@ -187,4 +193,4 @@ def main():
         print("Vui lòng cung cấp --query hoặc --file")
 
 if __name__ == "__main__":
-    main()
+    main() 

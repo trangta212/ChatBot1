@@ -1,9 +1,0 @@
-[
-  {
-    "query": "echo -e \"cách đăng tin \" > queries.txt",
-    "timestamp": "2025-05-18T16:43:15.662977",
-    "responses": {
-      "gemini": "\n\nChào bạn! Để đăng tin cho thuê phòng trên website của chúng ta, bạn thực hiện theo các bước sau nha:\n\n1.  **Đăng ký tài khoản:** Tạo tài khoản trên hệ thống.\n2.  **Đăng nhập & Đăng bài:** Đăng nhập và chọn mục \"Đăng bài\".\n3.  **Nhập thông tin:** Điền đầy đủ thông tin phòng (địa chỉ, giá, diện tích, tiện ích, hình ảnh).\n4.  **Xác thực CCCD:** Cung cấp thông tin cá nhân theo CCCD để đảm bảo tính chính xác.\n5.  **Thanh toán:** Thanh toán phí đăng bài (phí có thể thay đổi tùy theo vị trí và thời gian hiển thị).\n\n**Lưu ý quan trọng:** Bài đăng cần có ít nhất 3 ảnh rõ ràng và thông tin chính xác nhé!\n\nHiện tại, mình chưa có URL cụ thể cho từng bước, bạn vui lòng truy cập website để xem hướng dẫn chi tiết hơn nha!"
-    }
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "query": "echo -e \"Tìm nhà nguyên căn ở kiến an hải phòng  > queries.txt",
-    "timestamp": "2025-05-18T20:44:00.325384",
-    "responses": {
-      "gemini": "\n\nÔi, bạn muốn tìm nhà nguyên căn ở Kiến An, Hải Phòng phải không nè! 🏠 Mình đã tìm được một lựa chọn siêu hot đó:\n\n**Tóm tắt lựa chọn:**\n\n*   **Nhà mới 100% 60m2, 2 mặt tiền, đường rộng 7m:**\n    *   **Địa chỉ:** 442 Đồng Hòa, Phường Đồng Hòa, Quận Kiến An\n    *   **Giá:** 6,000,000đ/tháng\n    *   **Ưu điểm:** Nhà mới tinh, diện tích rộng rãi, 2 mặt tiền thoáng mát, đường rộng rãi thuận tiện giao thông.\n    *   **Nhược điểm:** Hiện tại chưa có tiện ích mở rộng.\n\n**Lời khuyên:** Với nhu cầu tìm nhà nguyên căn, đây có vẻ là lựa chọn rất phù hợp đó! Nhà mới, diện tích tốt, lại có vị trí đẹp. Bạn có thể xem thêm chi tiết tại đây nha: [http://localhost:3000/user/room-details/1076](http://localhost:3000/user/room-details/1076) 💖\n\nChúc bạn tìm được căn nhà ưng ý nhé! 🍀"
-    }
-  }
-]

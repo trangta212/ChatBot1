@@ -1,0 +1,33 @@
+query,timestamp,model,response
+Tôi muốn thuê phòng trọ ở Hà Nội,2025-05-19T16:41:15.650031,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở Hà Nội đây! Để mình tóm tắt giúp bạn nhé:
+
+*   **Phòng 1:** 🏡 **Phòng trọ nhà trọ ngõ 30 Phú Mỹ, Mỹ Đình** 🏡
+    *   Giá: 1.200.000đ/tháng
+    *   Địa chỉ: 16 Lê Đức Thọ, Nam Từ Liêm
+    *   Ưu điểm: Giá rẻ, có máy lạnh, có hầm để xe.
+    *   Nhược điểm: Không có tiện ích mở rộng khác.
+    *   👉 Xem chi tiết: [http://localhost:3000/user/room-details/299](http://localhost:3000/user/room-details/299)
+
+*   **Phòng 2:** 🚪 **Phòng trọ khép kín tại Khương Đình, Thanh Xuân** 🚪
+    *   Giá: 1.600.000đ/tháng
+    *   Địa chỉ: 236 Khương Đình, Thanh Xuân
+    *   Ưu điểm: Phòng khép kín.
+    *   Nhược điểm: Không có tiện ích mở rộng.
+    *   👉 Xem chi tiết: [http://localhost:3000/user/room-details/831](http://localhost:3000/user/room-details/831)
+
+*   **Phòng 3:** 🧺 **Phòng trọ cạnh Đại học Kinh tế QD** 🧺
+    *   Giá: 1.900.000đ/tháng
+    *   Địa chỉ: 63/41/27 Phố Vọng, Hai Bà Trưng
+    *   Ưu điểm: Có kệ bếp, máy giặt, giờ giấc tự do.
+    *   Nhược điểm: Giá cao hơn 2 phòng còn lại.
+    *   👉 Xem chi tiết: [http://localhost:3000/user/room-details/877](http://localhost:3000/user/room-details/877)
+
+**Lời khuyên:**
+
+*   Nếu bạn ưu tiên **giá rẻ** và cần **máy lạnh, chỗ để xe**, phòng 1 là lựa chọn tốt.
+*   Nếu bạn muốn **phòng riêng tư** và không quá quan trọng tiện ích, phòng 2 sẽ phù hợp.
+*   Còn nếu bạn thích sự **tiện lợi** với bếp, máy giặt và **tự do**, phòng 3 là lựa chọn đáng cân nhắc (nhưng giá sẽ cao hơn một chút).
+
+Bạn thích phong cách nào nhất nè? 🥰"
