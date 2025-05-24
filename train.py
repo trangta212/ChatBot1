@@ -23,7 +23,7 @@ class LLMTrainer:
         self.models = {
             "gemini": {
                 "provider": "openrouter",
-                "model": "google/gemma-3-12b-it:free"
+                "model": "google/gemini-2.0-flash-exp:free"
             },
         }
 
@@ -69,7 +69,7 @@ class LLMTrainer:
             #     """
             system_prompt = """Bạn là trợ lý ảo cho một website đăng tin cho thuê phòng trọ và căn hộ.
                     Hãy trả lời ngắn gọn
-                    Tạo phản hồi có cấu trúc rõ ràng, tập trung vào các thông tin quan trọng nhất.                    
+                    Tạo phản hồi có cấu trúc rõ ràng, tập trung vào các thông tin quan trọng nhất.    
                     Nếu không có thông tin thì nêu khuyên người dùng liên hệ web để đựoc hỗ trợ thêm
                     Trả lời rõ ràng, dễ hiểu và hữu ích, thân thiện, đáng yêu."""
                 
@@ -82,10 +82,9 @@ Hãy giải thích quy trình một cách rõ ràng và dễ hiểu."""
         else:
             system_prompt = """Bạn là trợ lý ảo cho một website đăng tin cho thuê phòng trọ và căn hộ.
 Nhiệm vụ của bạn là hỗ trợ người dùng tìm được phòng phù hợp nhất dựa trên thông tin ngữ cảnh (danh sách các phòng được đề xuất).
-Nếu có nhiều kết quả, hãy tóm tắt các lựa chọn chính, so sánh ưu nhược điểm và đưa ra lời khuyên chọn phòng. Hàng cuối cho link từng phòng vào
-Nếu không có phòng phù hợp, hãy đề xuất người dùng thay đổi tiêu chí tìm kiếm.Nếu hỏi về phòng thì đưa link chi tiết về phòng để người dùng có thể tham khảo thêm
-
-Luôn trả lời bằng tiếng Việt. Trả lời dễ hiểu ,ngắn gọn, thân thiện , đáng yêu (có các icon đáng yêu) và hữu ích."""
+Nếu có nhiều kết quả, hãy tóm tắt các lựa chọn chính, so sánh ưu nhược điểm và đưa ra lời khuyên ngắn gọn chọn phòng. 
+Nếu không có phòng phù hợp, hãy thông báo không có kết quả và đề xuất người dùng thay đổi tiêu chí tìm kiếm.Chèn link url phòng vào.
+Luôn trả lời bằng tiếng Việt. Trả lời dễ hiểu ,ngắn gọn, đáng yêu (có các icon đáng yêu)."""
             user_prompt = f"""Ngữ cảnh:
 {context}
 
@@ -94,30 +93,39 @@ Yêu cầu tìm phòng: {query}
 Hãy tóm tắt các lựa chọn và đưa ra lời khuyên."""
         return system_prompt, user_prompt
 
-    def get_openrouter_response(self, model_name, system_prompt, user_prompt):
-        try:
-            url = "https://openrouter.ai/api/v1/chat/completions"
-            headers = {
-                "Authorization": f"Bearer {OPENROUTER_KEY}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "https://homenest.com",
-                "X-Title": "Rental Assistant"
-            }
-            payload = {
-                "model": model_name,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                "max_tokens": 1000,
-                "temperature": 0.3
-            }
-            response = requests.post(url, headers=headers, json=payload)
-            response.raise_for_status()
-            return response.json()["choices"][0]["message"]["content"]
-        except Exception as e:
-            print(f"OpenRouter API error: {e}")
-            return f"Error: {str(e)}"
+ 
+    def get_openrouter_response(self, model_name, system_prompt, user_prompt, max_retries=3, backoff_time=10):
+        url = "https://openrouter.ai/api/v1/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {OPENROUTER_KEY}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://homenest.com",
+            "X-Title": "Rental Assistant"
+        }
+        payload = {
+            "model": model_name,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+        }
+
+        for attempt in range(max_retries):
+            try:
+                response = requests.post(url, headers=headers, json=payload)
+                response.raise_for_status()
+                return response.json()["choices"][0]["message"]["content"]
+            except requests.exceptions.HTTPError as e:
+                if response.status_code == 429:
+                    print(f"Lỗi 429: Quá nhiều yêu cầu, đợi {backoff_time} giây rồi thử lại (lần {attempt+1}/{max_retries})")
+                    time.sleep(backoff_time)
+                else:
+                    print(f"Lỗi API: {e}")
+                    return f"Error: {str(e)}"
+            except Exception as e:
+                print(f"Lỗi không xác định: {e}")
+                return f"Error: {str(e)}"
+        return "Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429"
 
     def process_query(self, query, top_k=3):
         print(f"Xử lý truy vấn: '{query}'")
@@ -178,7 +186,6 @@ def main():
     parser.add_argument("--query", type=str, required=True)
     parser.add_argument("--file", type=str)
     parser.add_argument("--topk", type=int, default=3)
-
     parser.add_argument("--output", type=str, default="training_data")  # Nếu bạn cần thư mục output
 
     args = parser.parse_args()

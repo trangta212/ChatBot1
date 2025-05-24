@@ -1,0 +1,9 @@
+[
+  {
+    "query": "toi muon tim phong tro duoi 4 trieu ở danang",
+    "timestamp": "2025-05-22T14:13:55.237578",
+    "responses": {
+      "gemini": "\n\nChào bạn! 🌸 Mình thấy bạn đang muốn tìm phòng trọ ở Đà Nẵng với giá dưới 4 triệu đồng. Tuy nhiên, hiện tại mình chỉ có thông tin về các phòng trọ ở Thủ Đức, TP.HCM thôi nè. 😥\n\nDưới đây là tóm tắt các lựa chọn ở Thủ Đức để bạn tham khảo trước nha:\n\n*   **Phòng 1: PHÒNG TRỌ ĐƯỜNG BÌNH CHIỂU THỦ ĐỨC GIÁ RẺ** 💰 Giá: 1.000.000đ/tháng. Ưu điểm là giá rẻ, nhưng tiện ích khá cơ bản đó.\n    👉 Xem chi tiết: **[http://localhost:3000/user/room-details/32](http://localhost:3000/user/room-details/32)**\n*   **Phòng 2: KTX tư nhân nam nữ 1 triệu khu vực thủ đức, quận 9 gần trường spkt, cdct, làng đại học** 🏡 Giá: 1.000.000đ/tháng. Phòng này tiện nghi hơn hẳn với máy lạnh, máy giặt, tủ lạnh, thang máy, bảo vệ 24/24,... và không chung chủ nữa đó!\n    👉 Xem chi tiết: **[http://localhost:3000/user/room-details/160](http://localhost:3000/user/room-details/160)**\n*   **Phòng 3: Ký túc xá sleepbox xịn xò tại Thủ Đức, giá ưu đãi từ 1tr** 🛌 Giá: 1.000.000đ/tháng. Nếu bạn thích sự riêng tư thì sleepbox này là lựa chọn thú vị nha!\n    👉 Xem chi tiết: **[http://localhost:3000/user/room-details/283](http://localhost:3000/user/room-details/283)**\n\nVì bạn muốn tìm phòng ở Đà Nẵng, mình khuyên bạn nên thay đổi tiêu chí tìm kiếm trên website để có kết quả phù hợp nha! 😉 Hoặc bạn có thể cho mình biết thêm yêu cầu cụ thể hơn để mình hỗ trợ bạn tốt hơn nhé!"
+    }
+  }
+]

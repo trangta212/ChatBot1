@@ -1,0 +1,9 @@
+[
+  {
+    "query": "tôi muốn tìm phòng trọ quận cầu giấy hà nội",
+    "timestamp": "2025-05-22T16:33:21.261781",
+    "responses": {
+      "gemini": "\n\nChào bạn! 😊 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở quận Cầu Giấy đây:\n\n*   **Phòng 1:** Giá 2.800.000đ/tháng, nằm ở Xuân Thủy. 🏡 [http://localhost:3000/user/room-details/3747](http://localhost:3000/user/room-details/3747)\n*   **Phòng 2:** Giá 3.500.000đ/tháng, ở Yên Hòa, có đầy đủ tiện nghi như kệ bếp, máy lạnh, máy giặt, tủ lạnh, không chung chủ và bảo vệ 24/24. 🤩 [http://localhost:3000/user/room-details/3743](http://localhost:3000/user/room-details/3743)\n*   **Phòng 3:** Giá 4.000.000đ/tháng, nằm ở Xuân Thủy, full đồ, khép kín. 💯 [http://localhost:3000/user/room-details/4011](http://localhost:3000/user/room-details/4011)\n\n**Lời khuyên:**\n\n*   Nếu bạn muốn tiết kiệm chi phí, phòng 1 là lựa chọn tốt nhất. 💰\n*   Nếu bạn cần tiện nghi và sự thoải mái, phòng 2 sẽ rất phù hợp. ✨\n*   Nếu bạn ưu tiên sự riêng tư và đồ dùng đầy đủ, phòng 3 là lựa chọn hàng đầu. 💖\n\nChúc bạn sớm tìm được phòng ưng ý nhé! 🍀"
+    }
+  }
+]

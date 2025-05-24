@@ -1,0 +1,33 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng gần đại học ngoại ngữ hà nội có giá dưới 5 triệu,2025-05-20T15:10:56.437162,gemini,"
+Chào bạn! 🌸 Mình đã tìm được 3 phòng trọ/căn hộ phù hợp với tiêu chí của bạn, để mình tóm tắt giúp nha:
+
+*   **Phòng 1:**
+    *   **Tên:** Có phòng tầng 4 cho thuê ở Hv báo chí
+    *   **Địa chỉ:** Xuân Thủy, Cầu Giấy
+    *   **Giá:** 2.800.000đ/tháng
+    *   **Ưu điểm:** Giá cả phải chăng, gần HV Báo chí (có thể gần ĐH Ngoại ngữ HN)
+    *   **Nhược điểm:** Không có tiện ích gì thêm 😔
+    *   **Link:** [http://localhost:3000/user/room-details/348](http://localhost:3000/user/room-details/348)
+
+*   **Phòng 2:**
+    *   **Tên:** Cho thuê nhà cấp 4 khu tập thể Viện chăn nuôi, Thụy Phương
+    *   **Địa chỉ:** Thụy Phương, Bắc Từ Liêm
+    *   **Giá:** 3.600.000đ/tháng
+    *   **Ưu điểm:** Giá hợp lý
+    *   **Nhược điểm:** Khu vực Thụy Phương có thể hơi xa ĐH Ngoại ngữ HN, không có tiện ích.
+    *   **Link:** [http://localhost:3000/user/room-details/2491](http://localhost:3000/user/room-details/2491)
+
+*   **Phòng 3:**
+    *   **Tên:** Cho thuê căn hộ khép kín 1 khách 1 ngủ có gác xép tại Ngõ 68 Cầu Giấy
+    *   **Địa chỉ:** Cầu Giấy
+    *   **Giá:** 5.000.000đ/tháng
+    *   **Ưu điểm:** Đầy đủ tiện ích (máy lạnh, máy giặt, tủ lạnh, kệ bếp), giờ giấc tự do, có gác xép.
+    *   **Nhược điểm:** Giá cao nhất trong 3 phòng, sát mức ngân sách bạn đưa ra.
+    *   **Link:** [http://localhost:3000/user/room-details/450](http://localhost:3000/user/room-details/450)
+
+**Lời khuyên:**
+
+Nếu bạn ưu tiên giá rẻ và tiện lợi, phòng 1 có thể là lựa chọn tốt. Còn nếu bạn muốn một không gian đầy đủ tiện nghi và thoải mái hơn, phòng 3 là lựa chọn đáng cân nhắc dù giá hơi cao một chút. Phòng 2 có thể không phù hợp lắm vì hơi xa trường. 💖
+
+Bạn có muốn mình tìm thêm các phòng khác gần ĐH Ngoại ngữ HN với các tiêu chí khác không? Ví dụ như diện tích, số người ở,... nhỉ? 😊"

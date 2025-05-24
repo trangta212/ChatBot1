@@ -1,0 +1,26 @@
+query,timestamp,model,response
+tôi muốn tìm phòng trọ ở hồ chí minh,2025-05-22T14:30:02.889290,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được vài phòng trọ phù hợp với yêu cầu của bạn ở Hồ Chí Minh đây:
+
+Có 3 lựa chọn phòng trọ với mức giá 1 triệu/tháng, bạn cùng xem qua nhé:
+
+*   **Phòng 1: PHÒNG TRỌ ĐƯỜNG BÌNH CHIỂU THỦ ĐỨC GIÁ RẺ** 🏡
+    *   Địa chỉ: Phường Bình Chiểu, Thủ Đức
+    *   Ưu điểm: Giá rẻ.
+    *   Nhược điểm: Không có tiện ích gì thêm.
+    *   [Xem chi tiết] **http://localhost:3000/user/room-details/32**
+
+*   **Phòng 2: KTX tư nhân nam nữ 1 triệu khu vực thủ đức, quận 9 gần trường spkt, cdct, làng đại học** 🏢
+    *   Địa chỉ: Đường số 7, Linh Trung, Thủ Đức
+    *   Ưu điểm: Tiện ích đầy đủ (gác, bếp, máy lạnh, máy giặt, tủ lạnh, thang máy, bảo vệ, hầm xe, giờ giấc tự do, không chung chủ).
+    *   Nhược điểm: Có thể hơi đông nếu là khu KTX.
+    *   [Xem chi tiết] **http://localhost:3000/user/room-details/160**
+
+*   **Phòng 3: Ký túc xá sleepbox xịn xò tại Thủ Đức, giá ưu đãi từ 1tr** 🛌
+    *   Địa chỉ: Phạm Văn Đồng, Hiệp Bình Chánh, Thủ Đức
+    *   Ưu điểm: Kiểu dáng độc đáo, giá ưu đãi.
+    *   Nhược điểm: Không có tiện ích mở rộng.
+    *   [Xem chi tiết] **http://localhost:3000/user/room-details/283**
+
+**Lời khuyên:** Nếu bạn thích sự tiện nghi và an toàn, phòng KTX tư nhân (Phòng 2) là lựa chọn tốt nhất đó nha! 😉 Còn nếu bạn thích sự đơn giản và độc đáo, phòng sleepbox (Phòng 3) cũng rất thú vị đó! 🌟"

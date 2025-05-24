@@ -1,0 +1,68 @@
+[
+  {
+    "room_info": {
+      "type": "nhatro",
+      "price_per_month": 3000000,
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "area": 25,
+      "extensions": [
+        "điều hòa",
+        "máy giặt",
+        "wifi"
+      ],
+      "full_furnishing": "Đầy đủ nội thất"
+    },
+    "timestamp": "2025-05-24T13:53:05.172858",
+    "generated_content": {
+      "gemma": {
+        "room_name": "",
+        "description": "API Error: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions",
+        "generation_time": 2.166888952255249
+      }
+    }
+  },
+  {
+    "room_info": {
+      "type": "nhatro",
+      "price_per_month": 3000000,
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "area": 25,
+      "extensions": [
+        "điều hòa",
+        "máy giặt",
+        "wifi"
+      ],
+      "full_furnishing": "Đầy đủ nội thất"
+    },
+    "timestamp": "2025-05-24T13:54:18.171925",
+    "generated_content": {
+      "gemma": {
+        "room_name": "",
+        "description": "API Error: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions",
+        "generation_time": 1.9634170532226562
+      }
+    }
+  },
+  {
+    "room_info": {
+      "type": "nhatro",
+      "price_per_month": 3000000,
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "area": 25,
+      "extensions": [
+        "điều hòa",
+        "máy giặt",
+        "wifi"
+      ],
+      "full_furnishing": "Đầy đủ nội thất"
+    },
+    "timestamp": "2025-05-24T13:56:40.083854",
+    "generated_content": {
+      "gemma": {
+        "room_name": "",
+        "description": "API Error: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions",
+        "generation_time": 2.965430974960327
+      }
+    }
+  }
+]

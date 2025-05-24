@@ -1,0 +1,12 @@
+query,timestamp,model,response
+tìm phòng trọ ở thành phố đà nẵng,2025-05-22T16:08:17.966563,gemini,"
+
+Chào bạn! 😊 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở Đà Nẵng đây:
+
+*   **Phòng 1:** 🏡 43/36 Nguyễn Đình Tứ, Cẩm Lệ - Giá 2,300,000đ/tháng. Phòng có điều hòa, nước nóng, nệm và wifi, bếp. Tiện ích cơ bản thôi nhé! 👉 [http://localhost:3000/user/room-details/692](http://localhost:3000/user/room-details/692)
+*   **Phòng 2:** 🏘️ Nguyễn Chánh, Liên Chiểu - Giá 2,300,000đ/tháng. Phòng full nội thất, không chung chủ, giờ giấc tự do và có hầm xe. Nghe hấp dẫn nè! 👉 [http://localhost:3000/user/room-details/820](http://localhost:3000/user/room-details/820)
+*   **Phòng 3:** 🏢 159 Nguyễn Chánh, Liên Chiểu - Giá 2,500,000đ/tháng. Căn hộ full nội thất, có máy giặt, không chung chủ, giờ giấc tự do. Giá hơi cao hơn một chút xíu. 👉 [http://localhost:3000/user/room-details/742](http://localhost:3000/user/room-details/742)
+
+**Lời khuyên:** Nếu bạn ưu tiên giá cả và tiện ích cơ bản, phòng 1 và 2 là lựa chọn tốt. Còn nếu bạn muốn một căn hộ full nội thất và có máy giặt thì phòng 3 sẽ phù hợp hơn đó! 💖
+
+Chúc bạn tìm được phòng ưng ý nhé! 🍀"

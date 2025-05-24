@@ -1,0 +1,9 @@
+[
+  {
+    "query": "tôi muốn tìm chung cư ở quận 10 thành phố hồ chí minh",
+    "timestamp": "2025-05-22T15:51:40.168975",
+    "responses": {
+      "gemini": "\nChào bạn! 😊\n\nDựa trên yêu cầu của bạn, hiện tại mình có 1 lựa chọn chung cư phù hợp ở quận 10 nè:\n\n*   **Cho thuê CHDV Lê Hồng Phong, P12, Q10. 5tr/tháng - 20m2:**\n    *   **Giá:** 5,000,000đ/tháng\n    *   **Diện tích:** 20m2\n    *   **Địa chỉ:** Lê Hồng Phong, Phường 12, Quận 10\n    *   **Tiện ích:** Hiện tại chưa có tiện ích mở rộng.\n    *   **Xem chi tiết:** [http://localhost:3000/user/room-details/3392](http://localhost:3000/user/room-details/3392)\n\n**Lời khuyên:** Nếu bạn ưu tiên về giá cả phải chăng và vị trí thuận tiện ở quận 10, đây có thể là một lựa chọn tốt đó! 😉 Tuy nhiên, bạn nên xem xét kỹ về tiện ích cơ bản để đảm bảo phù hợp với nhu cầu của mình nhé!\n\nChúc bạn tìm được phòng ưng ý! 🍀"
+    }
+  }
+]

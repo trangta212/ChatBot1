@@ -1,0 +1,13 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội trong bán kính 3km,2025-05-23T15:52:56.221520,gemini,"Chào bạn 👋! Mình thấy có 2 phòng trọ có vẻ phù hợp với yêu cầu của bạn đó nha:
+
+1.  **Phòng trọ phố Vọng**:
+    *   **Ưu điểm**: Giá rẻ (1.9 triệu), có kệ bếp và máy giặt 🧺, giờ giấc thoải mái. 
+    *   **Nhược điểm**: Chỉ có kệ bếp.
+    *   **Link:** [http://localhost:3000/user/room-details/4931](http://localhost:3000/user/room-details/4931)
+2.  **Phòng trọ Kim Ngưu**:
+    *   **Ưu điểm**: Có máy lạnh ❄️, máy giặt 🧺, không chung chủ, giờ giấc tự do.
+    *   **Nhược điểm**: Giá nhỉnh hơn một chút (2.1 triệu).
+    *   **Link:** [http://localhost:3000/user/room-details/3502](http://localhost:3000/user/room-details/3502)
+
+**Lời khuyên**: Nếu bạn muốn tiết kiệm chi phí và không quá quan trọng việc có máy lạnh, phòng trọ phố Vọng là lựa chọn tốt. Còn nếu bạn thích sự thoải mái, riêng tư và cần máy lạnh thì phòng Kim Ngưu đáng cân nhắc hơn đó 😉!"

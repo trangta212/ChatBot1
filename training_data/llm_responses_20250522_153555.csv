@@ -1,0 +1,13 @@
+query,timestamp,model,response
+tôi muốn tìm phòng trọ gần đại học bách khoa hà nội,2025-05-22T15:35:57.472725,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 2 phòng trọ phù hợp với bạn đây:
+
+*   **Phòng 1: Phòng trọ cạnh Đại học kinh tế QD** 💰 1,900,000đ/tháng 🏠 63/41/27 Phố Vọng, Hai Bà Trưng. Có kệ bếp, máy giặt, giờ giấc tự do. (Gần Đại học Kinh tế QD, bạn nhé!) 👉 [http://localhost:3000/user/room-details/877](http://localhost:3000/user/room-details/877)
+*   **Phòng 2: Cho thuê phòng trọ tại ngõ 121 Kim Ngưu** 💰 2,100,000đ/tháng 🏠 Kim Ngưu, Hai Bà Trưng. Có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do. (Cách Đại học Bách Khoa Hà Nội khoảng 2-3km thôi ạ!) 👉 [http://localhost:3000/user/room-details/60](http://localhost:3000/user/room-details/60)
+
+**Lời khuyên:**
+
+Nếu bạn ưu tiên giá cả phải chăng và không ngại đi bộ/xe đạp một đoạn, phòng trọ cạnh Đại học Kinh tế QD là lựa chọn tốt. Còn nếu bạn muốn tiện nghi hơn (máy lạnh) và không chung chủ, phòng trên Kim Ngưu sẽ phù hợp hơn, dù giá hơi cao một chút xíu nha! 😉
+
+Chúc bạn tìm được phòng ưng ý! 🍀"

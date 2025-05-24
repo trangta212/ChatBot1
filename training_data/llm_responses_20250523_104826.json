@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ gần đại học bách khoa trong bán kính 3km giá dưới 5 triệu",
+    "timestamp": "2025-05-23T10:48:28.165432",
+    "responses": {
+      "gemini": "Error: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions"
+    }
+  }
+]

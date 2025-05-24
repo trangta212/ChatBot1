@@ -1,0 +1,2 @@
+query,timestamp,model,response
+đăng bài như thế nào,2025-05-23T15:55:56.958854,gemini,Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429

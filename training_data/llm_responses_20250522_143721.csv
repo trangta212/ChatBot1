@@ -1,0 +1,11 @@
+query,timestamp,model,response
+tôi muốn tìm phòng ở gan bach khoa ha noi,2025-05-22T14:37:21.568181,gemini,"
+Ôi không 🥺, hiện tại mình chưa tìm thấy phòng nào gần Đại học Bách Khoa Hà Nội cả. Có vẻ như danh sách phòng đang ""trống trơn"" một chút.
+
+Bạn có thể thử thay đổi tiêu chí tìm kiếm xem sao nhé! Ví dụ như:
+
+*   Mở rộng phạm vi tìm kiếm (ví dụ: tìm phòng ở quận nào đó gần Bách Khoa)?
+*   Thay đổi mức giá mong muốn?
+*   Hoặc có thêm yêu cầu gì khác không (ví dụ: có gác, có ban công,...)?
+
+Mình sẽ cố gắng tìm kiếm lại cho bạn nha! 🥰"

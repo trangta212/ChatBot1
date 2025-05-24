@@ -1,0 +1,41 @@
+[
+  {
+    "room_info": {
+      "room_type": "nhatro",
+      "price": 3000000,
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "area": 25,
+      "amenities": [
+        "điều hòa",
+        "máy giặt",
+        "wifi"
+      ],
+      "furniture": [
+        "giường",
+        "tủ quần áo",
+        "bàn học"
+      ],
+      "utilities": [
+        "nước",
+        "điện",
+        "internet"
+      ],
+      "special_features": [
+        "an ninh 24/7",
+        "camera giám sát"
+      ],
+      "target_tenant": "sinh viên",
+      "deposit": 3000000,
+      "contract_duration": "6 tháng",
+      "move_in_date": "2024-04-01"
+    },
+    "timestamp": "2025-05-24T12:23:28.980728",
+    "generated_content": {
+      "gemini": {
+        "title": "🔥 HOT! Phòng ĐẸP Quận 1 - FULL TIỆN NGHI - Giá Ưu Đãi SẬP SÀN! ⏰",
+        "description": "💥💥💥 Cơ hội vàng sở hữu không gian sống lý tưởng ngay trung tâm Quận 1 với mức giá không thể tin được! Chỉ 3 triệu/tháng, bạn đã có thể tận hưởng cuộc sống tiện nghi trong căn phòng trọ rộng rãi 25m², thiết kế thông minh, tràn ngập ánh sáng tự nhiên. \n\n📍 VỊ TRÍ VÀNG: 123 Đường ABC - dễ dàng di chuyển đến các trường đại học, khu vui chơi giải trí, và trung tâm thành phố. Tiết kiệm tối đa thời gian và công sức!\n\n✨ FULL NỘI THẤT, VÀO Ở NGAY: Không cần sắm sửa gì thêm! Phòng đã được trang bị đầy đủ: giường êm ái, tủ quần áo rộng rãi, bàn học tiện lợi, điều hòa mát lạnh, máy giặt hiện đại, và wifi tốc độ cao.\n\n🔒 AN TOÀN TUYỆT ĐỐI: An ninh 24/7, camera giám sát đảm bảo cuộc sống riêng tư và an toàn tuyệt đối cho bạn.\n\n💰 GIÁ CỰC ƯU ĐÃI: Chỉ 3 triệu/tháng cho một không gian sống chất lượng, tiện nghi tại trung tâm Quận 1. Quá hời!\n\nƯu đãi đặc biệt cho sinh viên! Đừng bỏ lỡ cơ hội có một không hai này! Liên hệ ngay để đặt lịch xem phòng trước khi hết chỗ! SẮP HẾT PHÒNG! 📞",
+        "generation_time": 5.4229958057403564
+      }
+    }
+  }
+]

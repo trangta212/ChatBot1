@@ -1,0 +1,9 @@
+[
+  {
+    "query": "phong tro gan dai hoc bach khoa ha noi",
+    "timestamp": "2025-05-22T15:34:33.381623",
+    "responses": {
+      "gemini": "\n\nChào bạn! 😊 Mình đã tìm được vài phòng trọ phù hợp với yêu cầu của bạn nha!\n\nDưới đây là tóm tắt các lựa chọn:\n\n*   **Phòng 1:** Nhà phố Kim Mã Thượng, quận Ba Đình. Giá 1,000,000đ/tháng, diện tích 40m2. 🏡 [http://localhost:3000/user/room-details/2497](http://localhost:3000/user/room-details/2497)\n*   **Phòng 2:** Nhà phố Đoàn Thị Điểm, quận Đống Đa. Giá 1,000,000đ/tháng, diện tích 40m2. 🏡 [http://localhost:3000/user/room-details/2498](http://localhost:3000/user/room-details/2498)\n*   **Phòng 3:** Phòng trọ ngõ 30 Phú Mỹ, quận Nam Từ Liêm. Giá 1,200,000đ/tháng, có máy lạnh và hầm để xe. ❄️🚗 [http://localhost:3000/user/room-details/299](http://localhost:3000/user/room-details/299)\n\n**Lời khuyên:**\n\n*   Nếu bạn muốn ở gần trung tâm và không quá quan trọng tiện ích, phòng 1 và 2 là lựa chọn tốt với giá cả phải chăng.\n*   Nếu bạn ưu tiên tiện ích như máy lạnh và chỗ để xe, phòng 3 ở Mỹ Đình sẽ phù hợp hơn. Tuy nhiên, bạn cần xem xét khoảng cách từ phòng đến Đại học Bách Khoa nhé! 🏫\n\nChúc bạn tìm được phòng ưng ý! 🍀"
+    }
+  }
+]

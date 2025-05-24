@@ -1,0 +1,2 @@
+timestamp,model,room_name,type,area,price_per_month,address,extensions,full_furnishing,generated_title,generated_description,generation_time
+2025-05-24T13:48:12.224196,gemini,,nhatro,25,3000000,"123 Đường ABC, Quận 1, TP.HCM","['điều hòa', 'máy giặt', 'wifi']",Đầy đủ nội thất,,Đã thử tối đa số lần retry nhưng vẫn thất bại,79.36828994750977

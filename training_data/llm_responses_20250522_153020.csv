@@ -1,0 +1,31 @@
+query,timestamp,model,response
+chung cu quan nhat ho chi minh,2025-05-22T15:30:20.826903,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với bạn ở Thủ Đức, giá từ 1 triệu đó nha!
+
+Đây là tóm tắt các lựa chọn nè:
+
+*   **Phòng 1: PHÒNG TRỌ ĐƯỜNG BÌNH CHIỂU THỦ ĐỨC GIÁ RẺ** 🏡
+    *   Giá: 1,000,000đ/tháng
+    *   Địa chỉ: Phường Bình Chiểu, Thủ Đức
+    *   Ưu điểm: Giá rẻ.
+    *   Nhược điểm: Không có tiện ích gì thêm.
+    *   Xem chi tiết: [http://localhost:3000/user/room-details/32](http://localhost:3000/user/room-details/32)
+
+*   **Phòng 2: KTX tư nhân nam nữ 1 triệu khu vực thủ đức, quận 9** 🌟
+    *   Giá: 1,000,000đ/tháng
+    *   Địa chỉ: Đường số 7, Phường Linh Trung, Thủ Đức
+    *   Ưu điểm: Tiện ích siêu xịn (gác, bếp, máy lạnh, máy giặt, tủ lạnh, thang máy, bảo vệ, hầm xe, giờ giấc tự do, không chung chủ).
+    *   Nhược điểm: Có thể hơi đông nếu là khu KTX.
+    *   Xem chi tiết: [http://localhost:3000/user/room-details/160](http://localhost:3000/user/room-details/160)
+
+*   **Phòng 3: Ký túc xá sleepbox xịn xò tại Thủ Đức** 😴
+    *   Giá: 1,000,000đ/tháng
+    *   Địa chỉ: Phạm Văn Đồng, Phường Hiệp Bình Chánh, Thủ Đức
+    *   Ưu điểm: Sleepbox riêng tư.
+    *   Nhược điểm: Không có tiện ích mở rộng.
+    *   Xem chi tiết: [http://localhost:3000/user/room-details/283](http://localhost:3000/user/room-details/283)
+
+**Lời khuyên:** Nếu bạn thích sự tiện nghi và an toàn, phòng KTX tư nhân (Phòng 2) là lựa chọn tuyệt vời đó nha! Còn nếu bạn thích sự riêng tư, phòng sleepbox (Phòng 3) cũng rất thú vị đó! 😉
+
+Tuy nhiên, bạn yêu cầu tìm chung cư quận nhất, còn các phòng này ở Thủ Đức hết rồi đó. Bạn có muốn mình tìm lại với tiêu chí ""chung cư quận nhất"" không nè? 😊"

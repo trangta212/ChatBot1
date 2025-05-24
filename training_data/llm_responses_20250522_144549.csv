@@ -1,0 +1,10 @@
+query,timestamp,model,response
+tôi muốn tìm phòng trọ ở quận 1 hồ chí minh ,2025-05-22T14:45:50.094562,gemini,"
+
+Chào bạn! 😊 Mình đã tìm được 3 phòng trọ quận 1 phù hợp với bạn đây:
+
+*   **Phòng 1: SLEEPBOX, KTX FULL NỘI THẤT BÙI VIỆN, Q1.** Giá 1,3tr/tháng, đầy đủ tiện ích (máy lạnh, máy giặt, tủ lạnh, kệ bếp), không chung chủ, giờ giấc tự do và có hầm xe. ➡️ [http://localhost:3000/user/room-details/229](http://localhost:3000/user/room-details/229)
+*   **Phòng 2: 1tr6 có ngay ktx đẹp tại trung tâm quận 1.** Giá 1,6tr/tháng, vị trí trung tâm nhưng không có tiện ích mở rộng. ➡️ [http://localhost:3000/user/room-details/300](http://localhost:3000/user/room-details/300)
+*   **Phòng 3: SLEEPBOX RỘNG RÃI TIỆN NGHI NGAY NGÃ TƯ HAI BÀ TRƯNG _ VÕ THỊ SÁU ,QUẬN 1.** Giá 2tr/tháng, tiện ích tương tự phòng 1, vị trí gần ngã tư Hai Bà Trưng - Võ Thị Sáu. ➡️ [http://localhost:3000/user/room-details/137](http://localhost:3000/user/room-details/137)
+
+**Lời khuyên:** Nếu bạn ưu tiên tiện ích và ngân sách vừa phải, phòng 1 là lựa chọn tốt nhất. Nếu bạn thích ở trung tâm và không cần quá nhiều tiện ích, phòng 2 cũng đáng cân nhắc. Còn nếu bạn muốn một phòng tiện nghi và vị trí đẹp, phòng 3 sẽ là lựa chọn phù hợp nhất nhé! 💖"

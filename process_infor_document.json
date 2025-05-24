@@ -40,5 +40,11 @@
       "type": "process_info",
       "category": "lưu ý khi đăng bài",
       "content": "Lưu ý khi đăng bài cho thuê:\n1. Nội dung bài đăng phải trung thực, không phóng đại.\n2. Cần có ít nhất 3 hình ảnh rõ nét, đúng thực tế.\n3. Không đăng cùng một phòng nhiều lần trong vòng 7 ngày.\n4. Không sử dụng từ ngữ phản cảm, sai chính tả, hoặc gây hiểu nhầm.\n5. Bài đăng vi phạm sẽ bị gỡ mà không cần báo trước.\nLưu ý: Các tài khoản vi phạm nhiều lần có thể bị khóa vĩnh viễn."
+    },
+    {
+      "chunk_id": "process_10",
+      "type": "process_info",
+      "category": "đặt cọc",
+      "content": "Lưu ý khi đặt cọc thuê phòng:\n- Bạn hãy nhấn nút \"Thuê\" trên trang chi tiết của từng phòng để tiến hành đặt cọc.\n- Sau đó, nhập đầy đủ các thông tin cần thiết.\n- Giá trị đặt cọc là 10% giá trị tiền thuê phòng.\n- Chủ trọ sẽ xác nhận yêu cầu trong vòng 1 ngày.\n  - Nếu chủ trọ xác nhận, hệ thống sẽ tiến hành tạo hợp đồng thuê.\n  - Nếu chủ trọ từ chối hoặc không phản hồi trong 1 ngày, tiền cọc sẽ được hoàn lại vào tài khoản của bạn."
     }
   ]

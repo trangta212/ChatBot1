@@ -1,0 +1,18 @@
+query,timestamp,model,response
+tôi muốn tìm phòng trọ ở hà nội,2025-05-22T15:02:50.234430,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở Hà Nội đây:
+
+*   **Phòng 1:** 🏡 **Phòng trọ nhà trọ ngõ 30 Phú Mỹ, Mỹ Đình** - Giá 1.200.000đ/tháng. Có máy lạnh, có hầm để xe. 🚗
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/299)
+*   **Phòng 2:** 🚪 **Phòng trọ khép kín Khương Đình, Thanh Xuân** - Giá 1.600.000đ/tháng. Không có tiện ích gì thêm.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/831)
+*   **Phòng 3:** 🧺 **Phòng trọ cạnh Đại học Kinh tế QD** - Giá 1.900.000đ/tháng. Có kệ bếp, máy giặt, giờ giấc tự do. ⏰
+
+**Lời khuyên:**
+
+*   Nếu bạn ưu tiên giá rẻ và tiện nghi cơ bản (máy lạnh, chỗ để xe), phòng 1 là lựa chọn tốt.
+*   Nếu bạn cần không gian riêng tư và không quá quan trọng tiện ích, phòng 2 có thể phù hợp.
+*   Còn nếu bạn thích nấu ăn, có máy giặt và muốn tự do về giờ giấc, phòng 3 sẽ là lựa chọn lý tưởng! ✨
+
+Chúc bạn sớm tìm được phòng ưng ý nhé! 🥰"

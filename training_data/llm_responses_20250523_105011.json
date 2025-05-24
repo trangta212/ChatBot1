@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ gần đại học bách khoa trong bán kính 3km giá dưới 5 triệu",
+    "timestamp": "2025-05-23T10:50:13.331820",
+    "responses": {
+      "gemini": "Chào bạn 👋, mình thấy có 2 phòng trọ có vẻ phù hợp với bạn đó nha:\n\n1.  **Phòng trọ phố Vọng**:\n\n    *   📍 Gần Đại học Kinh tế Quốc dân (cũng khá gần Bách Khoa đó nha 😉).\n    *   💰 Giá mềm: 1.900.000đ/tháng.\n    *   ✅ Tiện ích: Có kệ bếp, máy giặt, giờ giấc tự do.\n    *   👉 [Xem chi tiết tại đây](http://localhost:3000/user/room-details/4931)\n2.  **Phòng trọ Kim Ngưu**:\n\n    *   📍 Ở Kim Ngưu, cũng không quá xa Bách Khoa đâu nè.\n    *   💰 Giá nhỉnh hơn chút: 2.100.000đ/tháng.\n    *   ✅ Tiện ích: Có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do.\n    *   👉 [Xem chi tiết tại đây](http://localhost:3000/user/room-details/3502)\n\n**Lời khuyên**: Nếu bạn thích nấu ăn 🍜 và muốn tiết kiệm chi phí thì phòng phố Vọng là lựa chọn tốt. Còn nếu bạn cần máy lạnh ❄️ và thích tự do tuyệt đối thì phòng Kim Ngưu đáng để cân nhắc đó!"
+    }
+  }
+]

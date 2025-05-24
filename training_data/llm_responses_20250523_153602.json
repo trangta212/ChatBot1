@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ ở cầu giấy hà nội",
+    "timestamp": "2025-05-23T15:36:10.523344",
+    "responses": {
+      "gemini": "Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429"
+    }
+  }
+]

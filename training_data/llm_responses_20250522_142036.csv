@@ -1,0 +1,18 @@
+query,timestamp,model,response
+toi muon tim phong tro o danang,2025-05-22T14:23:12.780395,gemini,"
+
+Ôi không, mình thấy bạn đang tìm phòng ở Đà Nẵng mà danh sách phòng lại ở Thủ Đức nè 🥺. Có vẻ như có sự nhầm lẫn gì đó rồi!
+
+Hiện tại, mình không có thông tin về phòng trọ ở Đà Nẵng đâu. Bạn ơi, bạn có thể kiểm tra lại yêu cầu tìm kiếm của mình xem sao nhé! Hoặc là bạn có thể thay đổi tiêu chí tìm kiếm, ví dụ như:
+
+*   **Thay đổi địa điểm:** Tìm phòng ở Thủ Đức luôn cũng được đó! 😉
+*   **Thay đổi giá:** Có thể bạn muốn tìm phòng giá khác?
+*   **Thay đổi tiện ích:** Bạn cần những tiện ích gì đặc biệt nè?
+
+Nếu bạn muốn xem các phòng đang có ở Thủ Đức, mình có thể tóm tắt nhanh cho bạn nè:
+
+*   **Phòng 1:** Giá rẻ 1tr/tháng, đường Bình Chiểu, Thủ Đức. Tiện ích cơ bản thôi nha. **[Xem phòng](http://localhost:3000/user/room-details/32)**
+*   **Phòng 2:** Giá 1tr/tháng, KTX tư nhân, đường số 7, Linh Trung, Thủ Đức. Đầy đủ tiện ích như máy lạnh, máy giặt, tủ lạnh, thang máy, giờ giấc tự do,... Rất phù hợp cho sinh viên! **[Xem phòng](http://localhost:3000/user/room-details/160)**
+*   **Phòng 3:** Giá 1tr/tháng, Ký túc xá sleepbox, Phạm Văn Đồng, Hiệp Bình Chánh, Thủ Đức. Thiết kế độc đáo, giá ưu đãi. **[Xem phòng](http://localhost:3000/user/room-details/283)**
+
+Chúc bạn sớm tìm được phòng ưng ý nha! 🍀"

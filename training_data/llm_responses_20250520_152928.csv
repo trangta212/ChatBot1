@@ -1,0 +1,24 @@
+query,timestamp,model,response
+đăng bài,2025-05-20T15:29:29.191579,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn nè:
+
+*   **Phòng 1: PHÒNG TRỌ ĐƯỜNG BÌNH CHIỂU THỦ ĐỨC GIÁ RẺ** 🏡
+    *   Giá: 1.000.000đ/tháng
+    *   Ưu điểm: Giá cả phải chăng.
+    *   Nhược điểm: Không có tiện ích gì thêm.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/32)
+
+*   **Phòng 2: KTX tư nhân nam nữ 1 triệu khu vực thủ đức, quận 9 gần trường spkt, cdct, làng đại học** 🏢
+    *   Giá: 1.000.000đ/tháng
+    *   Ưu điểm: Tiện ích siêu xịn (gác, bếp, máy lạnh, máy giặt, tủ lạnh, thang máy, bảo vệ 24/24, hầm xe), không chung chủ, giờ giấc tự do.
+    *   Nhược điểm: Có thể hơi xa so với vị trí bạn mong muốn.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/160)
+
+*   **Phòng 3: Ký túc xá sleepbox xịn xò tại Thủ Đức, giá ưu đãi từ 1tr** 🛌
+    *   Giá: 1.000.000đ/tháng
+    *   Ưu điểm: Giá tốt, có thể là lựa chọn độc đáo.
+    *   Nhược điểm: Không có tiện ích mở rộng.
+    *   [Xem chi tiết](http://localhost:3000/user/room-details/283)
+
+**Lời khuyên:** Nếu bạn ưu tiên tiện nghi và sự thoải mái, phòng 2 là lựa chọn tuyệt vời! ✨ Còn nếu bạn muốn tiết kiệm và không quá quan trọng tiện ích, phòng 1 hoặc phòng 3 cũng đáng cân nhắc nha. 😉"

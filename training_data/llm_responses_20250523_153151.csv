@@ -1,0 +1,8 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ ở cầu giấy hà nội,2025-05-23T15:32:00.384477,gemini,"Chào bạn 👋, mình thấy có 3 phòng trọ ở Cầu Giấy, Hà Nội nè, để mình giúp bạn so sánh nha:
+
+*   **Phòng 1**: Ở Xuân Thủy (2.8 triệu) 👉 Giá rẻ nhất, nhưng không có tiện ích gì thêm 😥. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/3819).
+*   **Phòng 2**: Ở Yên Hòa (3.5 triệu) 👉 Rộng rãi (40m2), đầy đủ tiện nghi (kệ bếp, máy lạnh, máy giặt, tủ lạnh), lại còn tự do giờ giấc và có bảo vệ nữa chứ 🤩. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/3816).
+*   **Phòng 3**: Ở Xuân Thủy (4 triệu) 👉 Full đồ, khép kín, nhưng không có thông tin chi tiết về tiện ích 🧐. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/4421).
+
+**Lời khuyên**: Nếu bạn ưu tiên tiện nghi và thoải mái thì phòng 2 có vẻ là lựa chọn tốt nhất đó 🥰. Còn nếu bạn muốn tiết kiệm chi phí thì phòng 1 sẽ phù hợp hơn. Phòng 3 có vẻ ít thông tin quá, bạn nên xem kỹ trước khi quyết định nha 😉."

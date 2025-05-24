@@ -112,4 +112,4 @@ def process_json_custom(input_path, output_path, max_tokens=256):
         json.dump(chunks, f_out, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
-    process_json_custom("preprocessed_roomInformation.json", "output_chunks.json", max_tokens=256)
+    process_json_custom("simplified_rooms.json", "output_chunks.json", max_tokens=256)

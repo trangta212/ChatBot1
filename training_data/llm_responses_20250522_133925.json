@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng gần đại học bách khoa hà nội trong bán kính 3km",
+    "timestamp": "2025-05-22T13:39:27.086197",
+    "responses": {
+      "gemini": "\nChào bạn! 💖 Mình đã tìm được vài lựa chọn phòng trọ/căn hộ phù hợp với bạn đây:\n\n**Tóm tắt các lựa chọn:**\n\n*   **Phòng 1: TOÀ CĂN HỘ DỊCH VỤ TAM GIÁC VÀNG BÁCH - KINH - XÂY** 🌟\n    *   **Giá:** 6,000,000đ/tháng\n    *   **Ưu điểm:** Đầy đủ tiện nghi (gác, bếp, máy lạnh, máy giặt, tủ lạnh, thang máy), không chung chủ, giờ giấc tự do.\n    *   **Nhược điểm:** Giá hơi cao.\n    *   **Khoảng cách:** Khoảng 2.5km Đại học Bách Khoa.\n    *   [Xem chi tiết](http://localhost:3000/user/room-details/3069)\n\n*   **Phòng 2: Phòng trọ cạnh Đại học kinh tế QD** 🏡\n    *   **Giá:** 1,900,000đ/tháng\n    *   **Ưu điểm:** Giá cả phải chăng, có bếp và máy giặt, giờ giấc tự do.\n    *   **Nhược điểm:** Tiện nghi cơ bản.\n    *   **Khoảng cách:** Khoảng 3.5km Đại học Bách Khoa.\n    *   [Xem chi tiết](http://localhost:3000/user/room-details/877)\n\n*   **Phòng 3: Nhà nguyên căn trên Trường Chinh** 🏘️\n    *   **Giá:** 14,500,000đ/tháng\n    *   **Ưu điểm:** Nhà nguyên căn, 4 phòng ngủ.\n    *   **Nhược điểm:** Giá rất cao, không có tiện ích mở rộng.\n    *   **Khoảng cách:** Khoảng 4km Đại học Bách Khoa.\n    *   [Xem chi tiết](http://localhost:3000/user/room-details/2340)\n\n**Lời khuyên:**\n\nNếu bạn muốn tiện nghi đầy đủ và không ngại chi phí cao, phòng 1 là lựa chọn tốt nhất. Còn nếu bạn muốn tiết kiệm chi phí, phòng 2 cũng khá ổn. Phòng 3 phù hợp nếu bạn thuê cùng nhiều người và cần không gian rộng rãi. 💖\n\nChúc bạn sớm tìm được phòng ưng ý nhé! 🍀"
+    }
+  }
+]

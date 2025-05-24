@@ -1,0 +1,24 @@
+[
+  {
+    "room_info": {
+      "type": "nhatro",
+      "price_per_month": 3000000,
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "area": 25,
+      "extensions": [
+        "điều hòa",
+        "máy giặt",
+        "wifi"
+      ],
+      "full_furnishing": "Đầy đủ nội thất"
+    },
+    "timestamp": "2025-05-24T13:48:12.224196",
+    "generated_content": {
+      "gemini": {
+        "room_name": "",
+        "description": "Đã thử tối đa số lần retry nhưng vẫn thất bại",
+        "generation_time": 79.36828994750977
+      }
+    }
+  }
+]

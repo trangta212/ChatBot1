@@ -1,0 +1,9 @@
+[
+  {
+    "query": "toi muon tim chung cu o ha noi",
+    "timestamp": "2025-05-22T15:52:46.936270",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được vài lựa chọn phù hợp với yêu cầu của bạn nè:\n\nHiện tại, mình có 3 gợi ý chung cư/nhà trọ ở Hà Nội:\n\n*   **Nhà phố Kim Mã Thượng (Ba Đình):** Giá 1,000,000đ/tháng, diện tích 40m2. Vị trí trung tâm, tiện lợi nhưng không có tiện ích mở rộng. 🏡 [http://localhost:3000/user/room-details/2497](http://localhost:3000/user/room-details/2497)\n*   **Nhà phố Đoàn Thị Điểm (Đống Đa):** Giá 1,000,000đ/tháng, diện tích 40m2. Tương tự Kim Mã Thượng, vị trí đẹp nhưng không có tiện ích. 🏘️ [http://localhost:3000/user/room-details/2498](http://localhost:3000/user/room-details/2498)\n*   **Phòng trọ ngõ 30 Phú Mỹ (Nam Từ Liêm):** Giá 1,200,000đ/tháng, có máy lạnh và hầm để xe. Diện tích nhỏ hơn, nhưng có tiện ích cơ bản. ❄️🚗 [http://localhost:3000/user/room-details/299](http://localhost:3000/user/room-details/299)\n\n**Lời khuyên:** Nếu bạn ưu tiên vị trí trung tâm và không quá quan trọng tiện ích, nhà phố Kim Mã Thượng hoặc Đoàn Thị Điểm là lựa chọn tốt. Còn nếu bạn muốn có máy lạnh và chỗ để xe, phòng trọ Phú Mỹ sẽ phù hợp hơn. 😉\n\nBạn thích phong cách nào hơn nè? 🥰"
+    }
+  }
+]

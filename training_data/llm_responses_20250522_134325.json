@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ giá dưới 4 triệu ở quận 1 thành phố hồ chí minh",
+    "timestamp": "2025-05-22T13:43:26.192307",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở quận 1, giá dưới 4 triệu nè:\n\n*   **Phòng 1: SLEEPBOX, KTX FULL NỘI THẤT BÙI VIỆN, Q1** 🏡\n    *   Giá: 1,300,000đ/tháng\n    *   Ưu điểm: Giá siêu hạt dẻ, đầy đủ tiện ích (máy lạnh, máy giặt, tủ lạnh, kệ bếp), không chung chủ, giờ giấc tự do, có chỗ để xe.\n    *   Nhược điểm: Có thể không gian hơi nhỏ.\n    *   [Xem chi tiết](http://localhost:3000/user/room-details/229)\n*   **Phòng 2: 1tr6 có ngay ktx đẹp tại trung tâm quận 1** ✨\n    *   Giá: 1,600,000đ/tháng\n    *   Ưu điểm: Giá cả hợp lý, vị trí trung tâm.\n    *   Nhược điểm: Không có tiện ích mở rộng.\n    *   [Xem chi tiết](http://localhost:3000/user/room-details/300)\n*   **Phòng 3: SLEEPBOX RỘNG RÃI TIỆN NGHI NGAY NGÃ TƯ HAI BÀ TRƯNG _ VÕ THỊ SÁU ,QUẬN 1** 💫\n    *   Giá: 2,000,000đ/tháng\n    *   Ưu điểm: Tiện nghi đầy đủ như phòng 1, không chung chủ, giờ giấc tự do, có chỗ để xe.\n    *   Nhược điểm: Giá cao hơn 2 phòng kia một chút.\n    *   [Xem chi tiết](http://localhost:3000/user/room-details/137)\n\n**Lời khuyên:** Nếu bạn ưu tiên giá rẻ và tiện ích cơ bản, phòng 1 là lựa chọn tuyệt vời. Nếu bạn muốn một không gian rộng rãi hơn và đầy đủ tiện nghi, phòng 3 sẽ phù hợp hơn. Còn nếu bạn thích sự đơn giản và ở trung tâm, phòng 2 là một lựa chọn ổn đó! 😉"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "cach dang bai",
+    "timestamp": "2025-05-22T15:33:03.670475",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với bạn ở Thủ Đức nè:\n\n*   **Phòng 1: PHÒNG TRỌ ĐƯỜNG BÌNH CHIỂU THỦ ĐỨC GIÁ RẺ** 🏡\n    *   Giá: 1.000.000đ/tháng\n    *   Địa chỉ: Phường Bình Chiểu\n    *   Điểm cộng: Giá siêu rẻ!\n    *   Điểm trừ: Tiện ích cơ bản thôi ạ.\n    *   Xem thêm: [http://localhost:3000/user/room-details/32](http://localhost:3000/user/room-details/32)\n\n*   **Phòng 2: KTX tư nhân nam nữ 1 triệu khu vực thủ đức, quận 9 gần trường spkt, cdct, làng đại học** 🌟\n    *   Giá: 1.000.000đ/tháng\n    *   Địa chỉ: Đường số 7, Phường Linh Trung\n    *   Điểm cộng: Tiện ích đầy đủ (máy lạnh, máy giặt, tủ lạnh, thang máy...), không chung chủ, giờ giấc tự do, bảo vệ 24/24.\n    *   Điểm trừ: Có thể hơi xa so với vị trí bạn mong muốn.\n    *   Xem thêm: [http://localhost:3000/user/room-details/160](http://localhost:3000/user/room-details/160)\n\n*   **Phòng 3: Ký túc xá sleepbox xịn xò tại Thủ Đức, giá ưu đãi từ 1tr** 😴\n    *   Giá: 1.000.000đ/tháng\n    *   Địa chỉ: Phạm Văn Đồng, Phường Hiệp Bình Chánh\n    *   Điểm cộng: Sleepbox hiện đại, giá tốt.\n    *   Điểm trừ: Tiện ích cơ bản.\n    *   Xem thêm: [http://localhost:3000/user/room-details/283](http://localhost:3000/user/room-details/283)\n\n**Lời khuyên:** Nếu bạn ưu tiên tiện ích và sự thoải mái, phòng 2 là lựa chọn tốt nhất! Còn nếu bạn thích sự yên tĩnh và độc lập, phòng 3 (sleepbox) cũng rất đáng cân nhắc nhé! 😉"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "tôi muốn tìm phòng giá dưới 4 triệu ở quận cầu giấy hà nội",
+    "timestamp": "2025-05-22T15:48:15.981719",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở quận Cầu Giấy, Hà Nội, giá dưới 4 triệu đây:\n\n*   **Phòng 1:**\n    *   **Giá:** 2,800,000đ/tháng 💰\n    *   **Địa chỉ:** Xuân Thủy, Dịch Vọng Hậu\n    *   **Ưu điểm:** Giá cả phải chăng.\n    *   **Nhược điểm:** Không có tiện ích gì thêm.\n    *   **Xem chi tiết:** [http://localhost:3000/user/room-details/348](http://localhost:3000/user/room-details/348)\n\n*   **Phòng 2:**\n    *   **Giá:** 3,000,000đ/tháng 💰\n    *   **Địa chỉ:** Hoàng Quốc Việt, Nghĩa Đô\n    *   **Ưu điểm:** Có kệ bếp, máy giặt, không chung chủ, giờ giấc tự do, bảo vệ 24/24, có hầm xe. 🚗\n    *   **Nhược điểm:** Giá hơi cao hơn phòng 1 một chút.\n    *   **Xem chi tiết:** [http://localhost:3000/user/room-details/2652](http://localhost:3000/user/room-details/2652)\n\n*   **Phòng 3:**\n    *   **Giá:** 3,500,000đ/tháng 💰\n    *   **Địa chỉ:** Yên Hòa\n    *   **Ưu điểm:** Đầy đủ tiện ích (kệ bếp, máy lạnh, máy giặt, tủ lạnh), không chung chủ, giờ giấc tự do, bảo vệ 24/24. ❄️\n    *   **Nhược điểm:** Giá cao nhất trong 3 phòng.\n    *   **Xem chi tiết:** [http://localhost:3000/user/room-details/344](http://localhost:3000/user/room-details/344)\n\n**Lời khuyên:** Nếu bạn ưu tiên giá rẻ nhất, phòng 1 là lựa chọn tốt. Nếu bạn muốn tiện nghi hơn, phòng 2 hoặc 3 sẽ phù hợp hơn. Cân nhắc kỹ nhu cầu của bạn để chọn phòng ưng ý nhất nhé! 😉"
+    }
+  }
+]

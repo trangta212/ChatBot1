@@ -1,0 +1,12 @@
+query,timestamp,model,response
+tôi muốn tìm phòng trọ dưới 5 triệu ở cầu giấy hà nội,2025-05-22T16:52:27.168707,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn ở Cầu Giấy, Hà Nội nhé:
+
+*   **Phòng 1:** Giá 2.800.000đ/tháng, nằm ở Xuân Thủy. 🏡 Link chi tiết: [http://localhost:3000/user/room-details/3819](http://localhost:3000/user/room-details/3819)
+*   **Phòng 2:** Giá 3.500.000đ/tháng, ở Yên Hòa, có đầy đủ tiện nghi như kệ bếp, máy lạnh, máy giặt, tủ lạnh, không chung chủ và bảo vệ 24/24. 🤩 Link chi tiết: [http://localhost:3000/user/room-details/3816](http://localhost:3000/user/room-details/3816)
+*   **Phòng 3:** Giá 4.000.000đ/tháng, ở Xuân Thủy, full đồ và khép kín. 🚪 Link chi tiết: [http://localhost:3000/user/room-details/4421](http://localhost:3000/user/room-details/4421)
+
+**Lời khuyên:**
+
+Nếu bạn ưu tiên giá rẻ nhất, phòng 1 là lựa chọn tốt. Còn nếu muốn tiện nghi hơn và không chung chủ, phòng 2 sẽ phù hợp hơn đó! 🥳 Phòng 3 thì đầy đủ đồ đạc, nhưng giá cũng cao hơn một chút. Bạn cân nhắc nhé!"

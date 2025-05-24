@@ -1,0 +1,9 @@
+[
+  {
+    "query": "phòng trọ gần đại học ngoại ngữ hà nội",
+    "timestamp": "2025-05-22T16:06:24.936342",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được 3 phòng trọ phù hợp với yêu cầu của bạn gần Đại học Ngoại ngữ Hà Nội đây:\n\n*   **Phòng 1:** Giá 2.800.000đ/tháng, nằm ở Xuân Thủy, Cầu Giấy. Phòng ở tầng 4, tiện ích cơ bản. ➡️ [http://localhost:3000/user/room-details/348](http://localhost:3000/user/room-details/348)\n*   **Phòng 2:** Giá 5.000.000đ/tháng, căn hộ khép kín có gác xép, đầy đủ tiện nghi (máy lạnh, máy giặt, tủ lạnh, kệ bếp) ở ngõ 68 Cầu Giấy. Giờ giấc tự do nữa nha! ➡️ [http://localhost:3000/user/room-details/450](http://localhost:3000/user/room-details/450)\n*   **Phòng 3:** Giá 4.000.000đ/tháng, phòng full đồ, khép kín ở Xuân Thủy, Cầu Giấy. ➡️ [http://localhost:3000/user/room-details/612](http://localhost:3000/user/room-details/612)\n\n**Lời khuyên:**\n\nNếu bạn muốn tiết kiệm chi phí, phòng 1 là lựa chọn tốt nhất. Còn nếu bạn muốn tiện nghi hơn và thoải mái hơn, phòng 2 sẽ rất phù hợp. Phòng 3 là sự lựa chọn cân bằng giữa giá cả và tiện ích đó! 🏠✨\n\nChúc bạn tìm được phòng ưng ý nhé! 🥰"
+    }
+  }
+]

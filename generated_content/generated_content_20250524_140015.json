@@ -1,0 +1,64 @@
+[
+  {
+    "room_info": {
+      "room_type": "nhatro",
+      "price": 3000000,
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "area": 25,
+      "amenities": [
+        "điều hòa",
+        "máy giặt",
+        "wifi"
+      ],
+      "furniture": [
+        "giường",
+        "tủ quần áo",
+        "bàn học"
+      ],
+      "utilities": [
+        "nước",
+        "điện",
+        "internet"
+      ],
+      "special_features": [
+        "an ninh 24/7",
+        "camera giám sát"
+      ],
+      "target_tenant": "sinh viên",
+      "deposit": 3000000,
+      "contract_duration": "6 tháng",
+      "move_in_date": "2024-04-01"
+    },
+    "timestamp": "2025-05-24T14:00:18.117202",
+    "generated_content": {
+      "gemini": {
+        "title": "🔥HOT🔥PHÒNG TRỌ Q1 GIÁ CỰC ƯU ĐÃI! FULL TIỆN NGHI - CHỐT NGAY!",
+        "description": "🎉Chào mừng bạn đến với căn phòng trọ lý tưởng tại trung tâm Quận 1!🎉\n\nBạn là sinh viên năng động đang tìm kiếm một không gian sống thoải mái, tiện nghi và an toàn? Đừng bỏ lỡ cơ hội sở hữu căn phòng 25m² RỘNG RÃI THOÁNG MÁT này với GIÁ CỰC ƯU ĐÃI chỉ 3,000,000đ/tháng! 💰\n\n📍VỊ TRÍ VÀNG: Tọa lạc tại 123 Đường ABC, Quận 1, bạn dễ dàng di chuyển đến các trường đại học, trung tâm thương mại, bệnh viện và các địa điểm vui chơi giải trí. 🚌\n\n✨FULL NỘI THẤT, VÀO Ở NGAY: Phòng được trang bị đầy đủ điều hòa, máy giặt, wifi tốc độ cao, giường, tủ quần áo, bàn học. Chỉ cần xách vali đến và tận hưởng cuộc sống tiện nghi! 🏠\n\n🔒AN TOÀN TUYỆT ĐỐI: An ninh 24/7, camera giám sát đảm bảo bạn luôn an tâm khi sống tại đây. 👮‍♀️\n\nNgoài ra, chúng tôi còn cung cấp các dịch vụ điện, nước, internet với giá cả hợp lý.\n\n⏰CƠ HỘI CUỐI CÙNG! Số lượng phòng có hạn, nhanh tay liên hệ để đặt lịch xem phòng và trở thành cư dân may mắn của chúng tôi! Hợp đồng thuê chỉ 6 tháng, cọc 1 tháng.\n\nNgày vào ở: 01/04/2024. Nhanh chân lên kẻo lỡ! 🏃‍♀️🏃‍♂️",
+        "generation_time": 6.369558095932007
+      }
+    }
+  },
+  {
+    "room_info": {
+      "room_type": "chungcu",
+      "price": "10000000",
+      "area": "123",
+      "address": "số 10, Đông Ngạc, Bắc Từ Liêm, Hà Nội",
+      "amenities": [
+        "Camera",
+        "Tủ lạnh"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "3000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-05-24T14:12:41.625461",
+    "generated_content": {
+      "gemini": {
+        "title": "💎CHCC 123m² FULL NỘI THẤT - Đông Ngạc - GIÁ TỐT NHẤT! SẮP HẾT!",
+        "description": "💥💥 ĐỪNG BỎ LỠ! Căn hộ chung cư siêu rộng rãi 123m² tại Đông Ngạc, Bắc Từ Liêm đang chờ đón chủ nhân! 💥💥\n\n🏠 Không gian sống lý tưởng với thiết kế hiện đại, FULL NỘI THẤT cao cấp, chỉ cần xách vali vào ở ngay! Tận hưởng sự thoải mái và tiện nghi với:\n\n✅ Diện tích RỘNG RÃI, THOÁNG MÁT, phù hợp cho gia đình hoặc nhóm bạn.\n✅ Nội thất đầy đủ, tiện nghi: giường, tủ, sofa, bàn ăn... tất cả đều mới tinh!\n✅ Tủ lạnh hiện đại giúp bạn bảo quản thực phẩm tươi ngon.\n✅ AN TOÀN TUYỆT ĐỐI với hệ thống camera giám sát 24/7.\n✅ Vị trí thuận tiện, dễ dàng di chuyển đến các khu vực trung tâm thành phố.\n\n💸💸 GIÁ CỰC ƯU ĐÃI: chỉ 10,000,000 VNĐ/tháng cho một không gian sống đẳng cấp và tiện nghi! 💸💸\n\n⚡️⚡️ SỐ LƯỢNG CÓ HẠN! Liên hệ ngay để đặt lịch xem phòng và sở hữu căn hộ mơ ước này! Đừng chần chừ, CƠ HỘI CUỐI CÙNG để bạn có một cuộc sống tiện nghi và thoải mái! ⚡️⚡️\n\n(Điện 3000đ/kWh, nước 20,000đ/m³)",
+        "generation_time": 5.378803968429565
+      }
+    }
+  }
+]

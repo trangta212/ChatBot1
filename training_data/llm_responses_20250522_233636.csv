@@ -1,0 +1,2 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ ở gần lottle mall tây hồ hà nội,2025-05-22T23:36:39.281706,gemini,Error: 429 Client Error: Too Many Requests for url: https://openrouter.ai/api/v1/chat/completions

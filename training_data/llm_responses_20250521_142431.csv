@@ -1,0 +1,22 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội trong bán kính 3km,2025-05-21T14:24:32.714400,gemini,"
+
+Chào bạn! 💖 Mình đã tìm được 2 phòng trọ phù hợp với bạn đây:
+
+**1. Phòng trọ cạnh Đại học Kinh tế QD:** 🏫
+
+*   **Giá:** 1,900,000đ/tháng
+*   **Ưu điểm:** Có kệ bếp, máy giặt, giờ giấc tự do.
+*   **Nhược điểm:** Khoảng cách đến Đại học Bách Khoa Hà Nội khoảng 3.5km (hơi xa hơn yêu cầu một chút xíu).
+*   [Xem chi tiết ngay!](http://localhost:3000/user/room-details/877)
+
+**2. Phòng trọ ngõ 121 Kim Ngưu:** 🏡
+
+*   **Giá:** 2,100,000đ/tháng
+*   **Ưu điểm:** Có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do.
+*   **Nhược điểm:** Khoảng cách đến Đại học Bách Khoa Hà Nội khoảng 4km (xa hơn yêu cầu một chút). Giá hơi cao hơn phòng đầu.
+*   [Xem chi tiết ngay!](http://localhost:3000/user/room-details/60)
+
+**Lời khuyên:** Vì cả hai phòng đều hơi xa Đại học Bách Khoa một chút, bạn có thể cân nhắc xem yếu tố nào quan trọng hơn với bạn: giá cả hay tiện nghi. Nếu ưu tiên giá, phòng cạnh Đại học Kinh tế QD sẽ hợp lý hơn. Nếu muốn thoải mái hơn với máy lạnh và không chung chủ, phòng ngõ 121 Kim Ngưu là lựa chọn tốt. 🌟
+
+Chúc bạn tìm được phòng ưng ý nhé! 🥰"

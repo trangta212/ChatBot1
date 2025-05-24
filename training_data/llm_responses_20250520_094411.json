@@ -1,0 +1,9 @@
+[
+  {
+    "query": "mình muốn tìm phòng trọ gần đại học ngoại ngữ trong bán kính 3km",
+    "timestamp": "2025-05-20T09:44:13.669918",
+    "responses": {
+      "gemini": "\nChào bạn! 💖 Mình đã tìm được 3 phòng trọ tiềm năng gần Đại học Ngoại ngữ nhé! Để mình giúp bạn so sánh và đưa ra lời khuyên nha:\n\n**Tóm tắt các lựa chọn:**\n\n*   **Phòng 1:** Giá 2.800.000đ/tháng, nằm ở Xuân Thủy, ngay gần Đại học Báo chí (khoảng 1-2km). Tiện ích cơ bản thôi ạ.\n    *   [Link xem chi tiết](http://localhost:3000/user/room-details/348)\n*   **Phòng 2:** Giá 5.000.000đ/tháng, nằm ở ngõ 68 Cầu Giấy (khoảng 2-3km). Căn hộ khép kín, có gác xép, đầy đủ tiện nghi như máy lạnh, máy giặt, tủ lạnh, kệ bếp và giờ giấc tự do.\n    *   [Link xem chi tiết](http://localhost:3000/user/room-details/450)\n*   **Phòng 3:** Giá 4.000.000đ/tháng, nằm ở ngõ 85 Xuân Thủy (khoảng 1-2km). Phòng full đồ, khép kín.\n    *   [Link xem chi tiết](http://localhost:3000/user/room-details/612)\n\n**Lời khuyên:**\n\nNếu bạn ưu tiên **tiết kiệm chi phí** và không quá quan trọng tiện nghi, phòng 1 là lựa chọn hợp lý nhất nè! 💰\n\nNếu bạn muốn một **căn hộ đầy đủ tiện nghi** và thoải mái, phòng 2 là lựa chọn tuyệt vời, nhưng giá sẽ cao hơn một chút. 🏡\n\nPhòng 3 là sự lựa chọn **ổn định** với giá cả phải chăng và đầy đủ tiện nghi cơ bản. 👍\n\nBạn thích phong cách nào hơn nè? Hoặc nếu bạn muốn tìm phòng với các tiêu chí khác (ví dụ: có ban công, có chỗ để xe,...) thì mình sẽ giúp bạn tìm lại nha! 😉"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "tôi muốn tìm phòng trọ ở hà nội",
+    "timestamp": "2025-05-22T15:11:43.764855",
+    "responses": {
+      "gemini": "\n\nChào bạn! 🌸\n\nRất tiếc, hiện tại mình chỉ có thông tin về các phòng trọ ở khu vực Thủ Đức, TP.HCM thôi ạ. 😔 Bạn muốn tìm phòng ở Hà Nội mà, mình không có dữ liệu phù hợp đâu.\n\nBạn có thể thử thay đổi tiêu chí tìm kiếm, ví dụ như:\n\n*   **Thay đổi địa điểm:** Tìm phòng ở các khu vực khác trong TP.HCM hoặc Hà Nội.\n*   **Điều chỉnh giá:** Xem xét các mức giá khác nhau.\n*   **Bổ sung tiện ích:** Thêm các tiện ích bạn cần như gần trường học, có chỗ để xe,...\n\nNếu bạn muốn xem các phòng hiện có ở Thủ Đức, mình có thể tóm tắt nhanh như sau nè:\n\n*   **Phòng 1:** Giá rẻ, nhưng không có tiện ích gì thêm. ➡️ [http://localhost:3000/user/room-details/32](http://localhost:3000/user/room-details/32)\n*   **Phòng 2:** Tiện nghi đầy đủ (máy lạnh, máy giặt, tủ lạnh, thang máy,...), không chung chủ, giờ giấc tự do. ➡️ [http://localhost:3000/user/room-details/160](http://localhost:3000/user/room-details/160)\n*   **Phòng 3:** Sleepbox hiện đại, giá ưu đãi. ➡️ [http://localhost:3000/user/room-details/283](http://localhost:3000/user/room-details/283)\n\nChúc bạn sớm tìm được phòng ưng ý nha! 🍀"
+    }
+  }
+]

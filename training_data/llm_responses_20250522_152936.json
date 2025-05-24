@@ -1,0 +1,9 @@
+[
+  {
+    "query": "toi muon tim phong tro o ha noi",
+    "timestamp": "2025-05-22T15:29:36.873452",
+    "responses": {
+      "gemini": "\n\nChào bạn! 💖 Mình đã tìm được vài lựa chọn phòng trọ ở Hà Nội cho bạn đây:\n\n*   **Phòng 1:** Nhà phố Kim Mã Thượng, quận Ba Đình, giá 1.000.000đ/tháng. Diện tích 40m2. 🏡 [http://localhost:3000/user/room-details/2497](http://localhost:3000/user/room-details/2497)\n*   **Phòng 2:** Nhà phố Đoàn Thị Điểm, quận Đống Đa, giá 1.000.000đ/tháng. Diện tích 40m2. 🏡 [http://localhost:3000/user/room-details/2498](http://localhost:3000/user/room-details/2498)\n*   **Phòng 3:** Phòng trọ ngõ 30 Phú Mỹ, Mỹ Đình, quận Nam Từ Liêm, giá 1.200.000đ/tháng. Có máy lạnh, hầm để xe. ❄️🚗 [http://localhost:3000/user/room-details/299](http://localhost:3000/user/room-details/299)\n\n**Lời khuyên:**\n\nNếu bạn ưu tiên giá rẻ và tiện nghi cơ bản, phòng 1 và 2 là lựa chọn tốt. Còn nếu bạn muốn có máy lạnh và chỗ để xe, phòng 3 sẽ phù hợp hơn dù giá hơi cao một chút. 🤔\n\nChúc bạn sớm tìm được phòng ưng ý nhé! 🍀"
+    }
+  }
+]

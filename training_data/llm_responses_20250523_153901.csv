@@ -1,0 +1,23 @@
+query,timestamp,model,response
+Tôi muốn tìm nhà gá,2025-05-23T15:39:08.768386,gemini,"Chào bạn 👋! Dựa trên yêu cầu tìm nhà giá rẻ của bạn, đây là các lựa chọn phù hợp nè:
+
+1.  **PHÒNG TRỌ ĐƯỜNG BÌNH CHIỂU THỦ ĐỨC GIÁ RẺ**:
+    *   💰 Giá: 1,000,000đ/tháng
+    *   📍 Địa chỉ: Bình Chiểu, Thủ Đức
+    *   📝 Ưu điểm: Giá rẻ. Nhược điểm: Không có tiện ích mở rộng.
+    *   🔗 Link: [http://localhost:3000/user/room-details/3454](http://localhost:3000/user/room-details/3454)
+
+2.  **KTX tư nhân nam nữ 1 triệu khu vực thủ đức, quận 9 gần trường spkt, cdct, làng đại học**:
+    *   💰 Giá: 1,000,000đ/tháng
+    *   📍 Địa chỉ: 17 Đường số 7, Linh Trung, Thủ Đức
+    *   ✅ Ưu điểm: Nhiều tiện ích như gác, kệ bếp, máy lạnh, máy giặt, tủ lạnh, thang máy, tự do giờ giấc, bảo vệ 24/24, hầm để xe.
+    *   🔗 Link: [http://localhost:3000/user/room-details/3628](http://localhost:3000/user/room-details/3628)
+
+3.  **Ký túc xá sleepbox xịn xò tại Thủ Đức, giá ưu đãi từ 1tr**:
+    *   💰 Giá: 1,000,000đ/tháng
+    *   📍 Địa chỉ: Phạm Văn Đồng, Hiệp Bình Chánh, Thủ Đức
+    *   📝 Ưu điểm: Giá rẻ. Nhược điểm: Không có tiện ích mở rộng.
+    *   🔗 Link: [http://localhost:3000/user/room-details/3753](http://localhost:3000/user/room-details/3753)
+
+**Lời khuyên**: Nếu bạn ưu tiên tiện nghi và an ninh, phòng KTX tư nhân ở Linh Trung là lựa chọn tốt nhất với nhiều tiện ích đi kèm đó nha ✨. Hai phòng còn lại phù hợp với bạn nào thích sự tối giản và tiết kiệm nè 😉.
+"
