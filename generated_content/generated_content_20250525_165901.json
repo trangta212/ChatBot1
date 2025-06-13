@@ -1,0 +1,25 @@
+[
+  {
+    "room_info": {
+      "room_type": "chungcu",
+      "price": "1000000",
+      "area": "40",
+      "address": "Số 10, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội",
+      "amenities": [
+        "Máy giặt",
+        "Tủ lạnh"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "4000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-05-25T16:59:05.481444",
+    "generated_content": {
+      "gemini": {
+        "title": "💎CCMN Cổ Nhuế - Full Nội Thất Giá SỐC! Chỉ 1 Triệu - SẮP HẾT!",
+        "description": "💥WOW! Bạn đang tìm kiếm một căn hộ chung cư mini RỘNG RÃI, TIỆN NGHI mà giá lại CỰC ƯU ĐÃI? Đừng bỏ lỡ cơ hội hiếm có này tại Cổ Nhuế 2, Bắc Từ Liêm! \n\n🏠Căn hộ 40m² FULL NỘI THẤT, thiết kế hiện đại, thoáng mát, chỉ cần xách vali đến ở ngay! Tiện nghi đầy đủ: Máy giặt, tủ lạnh,... giúp bạn tận hưởng cuộc sống tiện lợi và thoải mái.\n\n📍Vị trí đắc địa, dễ dàng di chuyển đến các trường đại học, khu vui chơi, trung tâm thương mại. Khu vực AN TOÀN TUYỆT ĐỐI, yên tĩnh, phù hợp với sinh viên và người đi làm.\n\n💰Giá chỉ 1.000.000đ/tháng - Quá rẻ cho một căn hộ chất lượng như vậy! Điện 4000/số, nước 20.000/người.\n\n⏰NHANH TAY liên hệ ngay để xem phòng! SỐ LƯỢNG CÓ HẠN! Đây là CƠ HỘI CUỐI CÙNG để sở hữu một không gian sống lý tưởng với mức giá không thể tốt hơn!",
+        "generation_time": 5.22377872467041
+      }
+    }
+  }
+]

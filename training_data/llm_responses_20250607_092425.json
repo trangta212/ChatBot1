@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ ở quận ba đình hà nội",
+    "timestamp": "2025-06-07T09:24:33.825834",
+    "responses": {
+      "gemini": "Chào bạn 👋, mình thấy phòng này có vẻ hợp với bạn đó nha:\n\n*   **Phòng đầy đủ tiện nghi**: Có gác xép, bàn làm việc, máy lạnh, tủ lạnh, máy giặt,... 🧺💻❄️ giúp bạn thoải mái sinh hoạt và làm việc.\n*   **Địa điểm**: Ở ngay Phan Đình Phùng, Ba Đình 🏘️, rất tiện đi lại.\n*   **Giá cả**: Chỉ 4 triệu/tháng, quá hợp lý luôn 💰.\n*   **Ưu điểm**: Giờ giấc tự do, không chung chủ 🚪🔑.\n\n👉 [Xem chi tiết phòng tại đây](http://localhost:3000/user/room-details/4538) và liên hệ chủ nhà ngay bạn nhé! Chúc bạn sớm tìm được phòng ưng ý 🥰!"
+    }
+  }
+]

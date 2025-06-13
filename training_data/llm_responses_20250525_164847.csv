@@ -1,0 +1,2 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội,2025-05-25T16:48:57.837326,gemini,Error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions

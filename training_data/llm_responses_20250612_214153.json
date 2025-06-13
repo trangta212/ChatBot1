@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn thuê phòng trọ gần đại học bách khoa hà nội có giá dưới 4 triệu",
+    "timestamp": "2025-06-12T21:42:04.371636",
+    "responses": {
+      "gemini": "Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429"
+    }
+  }
+]

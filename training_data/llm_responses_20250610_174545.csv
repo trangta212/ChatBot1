@@ -1,0 +1,8 @@
+query,timestamp,model,response
+tôi không thích bạn,2025-06-10T17:45:51.524987,gemini,"Chào bạn 👋, mình thấy có 3 phòng trọ giá 1 triệu đồng ở Thủ Đức nè:
+
+*   **Phòng 1:** Đường Bình Chiểu, không có tiện ích gì thêm (link: http://localhost:3000/user/room-details/3454). 😴
+*   **Phòng 2:** Đường số 7, Linh Trung, có đầy đủ tiện nghi như gác, bếp, máy lạnh, máy giặt, tủ lạnh, thang máy, bảo vệ 24/24, hầm xe, giờ giấc tự do, không chung chủ (link: http://localhost:3000/user/room-details/3628). 🤩
+*   **Phòng 3:** Phạm Văn Đồng, dạng ký túc xá sleepbox, không có tiện ích gì thêm (link: http://localhost:3000/user/room-details/3753). 😴
+
+Nếu bạn thích tiện nghi và tự do thì phòng số 2 là lựa chọn tốt nhất đó! 👍"

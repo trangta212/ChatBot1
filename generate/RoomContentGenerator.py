@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 # Load biến môi trường từ file .env
 load_dotenv()
-OPENROUTER_KEY = os.getenv("OPENROUTER_KEY")
+OPENROUTER_KEY = os.getenv("OPEN_GENERATE")
 
 class RoomContentGenerator:
     """Tạo tiêu đề và mô tả hấp dẫn cho phòng trọ từ thông tin đầu vào"""

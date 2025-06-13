@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ ở quận ba đình hà nội",
+    "timestamp": "2025-06-07T09:22:11.580547",
+    "responses": {
+      "gemini": "Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429"
+    }
+  }
+]

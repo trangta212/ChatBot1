@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội có giá dưới 4 triệu",
+    "timestamp": "2025-06-12T21:43:53.481795",
+    "responses": {
+      "gemini": "Chào bạn, mình thấy có 2 phòng khá ổn nè! 🥰\n\n*   **Phòng 1:** Gần Đại học Kinh tế Quốc dân (cũng khá gần Bách Khoa đó nha), giá lại mềm chỉ 1.9 triệu, có sẵn kệ bếp và máy giặt, giờ giấc thì siêu thoải mái. 👍 ([http://localhost:3000/user/room-details/4931](http://localhost:3000/user/room-details/4931))\n*   **Phòng 2:** Ở Kim Ngưu, giá nhỉnh hơn một chút (2.1 triệu), được cái có thêm máy lạnh, không chung chủ, cũng có máy giặt và giờ giấc tự do. 🤩 ([http://localhost:3000/user/room-details/3502](http://localhost:3000/user/room-details/3502))\n\n**Lời khuyên:** Nếu bạn thích tiết kiệm và không ngại đi bộ/xe bus một đoạn đến Bách Khoa thì phòng 1 là lựa chọn tốt. Còn nếu bạn muốn mát mẻ hơn với máy lạnh và thích tự do tuyệt đối thì phòng 2 đáng để cân nhắc đó! 😉"
+    }
+  }
+]

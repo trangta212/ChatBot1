@@ -13,7 +13,7 @@ from retrieval import retrieve_documents, analyze_query
 
 # Load biến môi trường từ file .env
 load_dotenv()
-OPENROUTER_KEY = os.getenv("OPENROUTER_KEY")
+OPENROUTER_KEY = os.getenv("OPEN_KEY")
 
 class LLMTrainer:
     def __init__(self, output_dir="training_data"):

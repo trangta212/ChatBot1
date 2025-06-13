@@ -1,0 +1,2 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ ở quận 1 hồ chí minh giá dưới 4 triệu,2025-06-10T17:32:31.328227,gemini,Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429

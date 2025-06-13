@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội",
+    "timestamp": "2025-05-25T16:51:07.959706",
+    "responses": {
+      "gemini": "Chào bạn! 🥰 Dưới đây là hai lựa chọn phòng trọ có thể phù hợp với bạn, gần khu vực Bách Khoa nè:\n\n1.  **Phòng trọ phố Vọng:**\n\n    *   💰 Giá: 1.900.000đ/tháng\n    *   ✅ Ưu điểm: Rẻ hơn, có kệ bếp, có máy giặt, giờ giấc tự do.\n    *   🔗 [http://localhost:3000/user/room-details/4931](http://localhost:3000/user/room-details/4931)\n2.  **Phòng trọ Kim Ngưu:**\n\n    *   💰 Giá: 2.100.000đ/tháng\n    *   ✅ Ưu điểm: Có máy lạnh, máy giặt, không chung chủ, giờ giấc tự do.\n    *   🔗 [http://localhost:3000/user/room-details/3502](http://localhost:3000/user/room-details/3502)\n\n**Lời khuyên:** Nếu bạn ưu tiên tiết kiệm chi phí thì phòng trọ ở phố Vọng là lựa chọn tốt. Nếu bạn muốn có thêm tiện nghi như máy lạnh và sự riêng tư thì phòng ở Kim Ngưu đáng xem xét hơn đó! 💖"
+    }
+  }
+]

@@ -1,0 +1,8 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ ở quận 1 hồ chí minh giá dưới 4 triệu,2025-06-10T17:34:11.699546,gemini,"Tuyệt vời! 😍 Mình tìm được 3 phòng trọ siêu xinh ở Quận 1, giá dưới 4 triệu nè:
+
+1.  **SLEEPBOX Bùi Viện**: Giá rẻ nhất (1.3tr), full nội thất, tự do giờ giấc. Phù hợp cho bạn nào thích khu phố Tây sôi động. Xem ngay: [http://localhost:3000/user/room-details/3548](http://localhost:3000/user/room-details/3548)
+2.  **KTX Phạm Ngũ Lão**: Giá 1.6tr, vị trí trung tâm. Tiện lợi di chuyển nhưng ít tiện ích hơn 2 phòng còn lại. Xem ngay: [http://localhost:3000/user/room-details/3762](http://localhost:3000/user/room-details/3762)
+3.  **SLEEPBOX Võ Thị Sáu**: Giá cao nhất (2tr), nhưng bù lại vị trí đẹp ngay ngã tư, nội thất đầy đủ, tiện nghi. Thích hợp cho bạn nào ưu tiên sự thoải mái và không gian rộng rãi. Xem ngay: [http://localhost:3000/user/room-details/3538](http://localhost:3000/user/room-details/3538)
+
+**Lời khuyên:** Nếu bạn muốn tiết kiệm nhất thì chọn Bùi Viện, còn nếu thích vị trí trung tâm và tiện nghi thì Võ Thị Sáu là lựa chọn tốt hơn đó! ✨"

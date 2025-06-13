@@ -1,0 +1,71 @@
+[
+  {
+    "room_info": {
+      "room_type": "chungcu",
+      "price": "1000000",
+      "area": "40",
+      "address": "Số 10, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội",
+      "amenities": [
+        "Máy giặt",
+        "Tủ lạnh"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "4000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-05-25T16:57:31.310644",
+    "generated_content": {
+      "gemini": {
+        "title": "Error",
+        "description": "API Error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions",
+        "generation_time": 0.886526346206665
+      }
+    }
+  },
+  {
+    "room_info": {
+      "room_type": "chungcu",
+      "price": "1000000",
+      "area": "40",
+      "address": "Số 10, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội",
+      "amenities": [
+        "Máy giặt",
+        "Tủ lạnh"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "4000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-05-25T16:58:22.532862",
+    "generated_content": {
+      "gemini": {
+        "title": "Error",
+        "description": "API Error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions",
+        "generation_time": 0.7142891883850098
+      }
+    }
+  },
+  {
+    "room_info": {
+      "room_type": "chungcu",
+      "price": "1000000",
+      "area": "40",
+      "address": "Số 10, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội",
+      "amenities": [
+        "Máy giặt",
+        "Tủ lạnh"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "4000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-05-25T16:58:28.100622",
+    "generated_content": {
+      "gemini": {
+        "title": "Error",
+        "description": "API Error: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions",
+        "generation_time": 0.7714910507202148
+      }
+    }
+  }
+]
