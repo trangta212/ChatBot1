@@ -1,0 +1,8 @@
+query,timestamp,model,response
+trọ dưới 3 triệu ở phạm văn đồng hà nội,2025-06-18T14:00:00.742241,gemini,"Chào bạn 👋, mình thấy có 3 phòng khá phù hợp với yêu cầu của bạn đó nha:
+
+*   **Phòng 1:** Ngõ 30 Phú Mỹ, Mỹ Đình - Giá siêu rẻ chỉ 1.2 triệu/tháng, có máy lạnh và hầm để xe 🤩. Tuy nhiên, vị trí này có thể hơi xa Phạm Văn Đồng một chút xíu 🤏. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/3779).
+*   **Phòng 2:** Khương Đình, Thanh Xuân - Giá 1.6 triệu/tháng, nhưng lại không có tiện ích mở rộng 🙁. Nếu bạn không quá cần các tiện ích thì đây cũng là một lựa chọn 🤔. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/4425).
+*   **Phòng 3:** Phố Vọng, Hai Bà Trưng - Giá 1.9 triệu/tháng, có kệ bếp, máy giặt và giờ giấc tự do 🥳. Phòng này có vẻ tiện nghi nhất, nhưng cũng xa Phạm Văn Đồng nhất 🥲. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/4931).
+
+**Lời khuyên:** Nếu bạn ưu tiên giá rẻ và có máy lạnh thì phòng ở Mỹ Đình là lựa chọn tốt. Còn nếu bạn cần tiện nghi và giờ giấc tự do thì phòng ở Phố Vọng đáng cân nhắc. Tuy nhiên, bạn nên xem xét khoảng cách từ các phòng này đến Phạm Văn Đồng để đưa ra quyết định cuối cùng nha 😉."

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "trọ dưới 3 triệu ở quận bắc từ liêm ",
+    "timestamp": "2025-06-18T13:57:07.721489",
+    "responses": {
+      "gemini": "Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429"
+    }
+  }
+]

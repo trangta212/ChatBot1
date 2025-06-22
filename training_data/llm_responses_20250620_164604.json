@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng gần đại học bách khoa hà nội ",
+    "timestamp": "2025-06-20T16:46:14.375654",
+    "responses": {
+      "gemini": "Error: Đã thử tối đa số lần retry nhưng vẫn bị lỗi 429"
+    }
+  }
+]

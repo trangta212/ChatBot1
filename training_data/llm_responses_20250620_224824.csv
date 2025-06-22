@@ -1,0 +1,2 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội có giá dưới 4 triệu giờ giấc tự do gía điện nhỏ hơn 4 nghìn,2025-06-20T22:48:26.006886,gemini,Error: 404 Client Error: Not Found for url: https://openrouter.ai/api/v1/chat/completions

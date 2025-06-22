@@ -1,0 +1,12 @@
+query,timestamp,model,response
+Tôi muốn tìm phòng trọ ở quận 10 hồ chí minh có giá dưới 4 triệu có đầy đủ nội thất,2025-06-21T23:51:04.293208,gemini,"Chào bạn! : ) Chúng tôi đã tìm thấy 3 phòng trọ phù hợp với yêu cầu của bạn ở quận 10, Hồ Chí Minh.
+
+Dưới đây là tóm tắt các lựa chọn:
+
+* Phòng 1: KÝ TÚC XÁ FULL NỘI THẤT (Link: http://localhost:3000/user/room-details/3553) - Giá: 1,200,000đ/tháng
+* Phòng 2: KTX CAO CẤP QUẬN 10 GIÁ RẺ (Link: http://localhost:3000/user/room-details/3559) - Giá: 1,200,000đ/tháng
+* Phòng 3: CHO THUÊ KTX FULL NỘI THẤT, GIÁ RẺ (Link: http://localhost:3000/user/room-details/4042) - Giá: 1,200,000đ/tháng
+
+Tất cả các phòng đều có đầy đủ nội thất và giá dưới 4 triệu đồng/tháng. Tuy nhiên, cần lưu ý rằng địa chỉ của phòng 3 nằm ở phường 15, còn các phòng 1 và 2 nằm ở phường 14.
+
+Lời khuyên: : ) Bạn nên chọn phòng 1 hoặc 2 vì chúng nằm gần nhau và có đầy đủ tiện ích. Tuy nhiên, nếu bạn muốn có thêm không gian, phòng 3 cũng là một lựa chọn tốt. Hãy xem xét kỹ lưỡng và chọn phòng phù hợp với nhu cầu của mình!"

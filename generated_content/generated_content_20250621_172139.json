@@ -1,0 +1,45 @@
+[
+  {
+    "room_info": {
+      "room_type": "tro",
+      "price": "1000000",
+      "area": "12",
+      "address": "Số 1, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội",
+      "amenities": [],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "3000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-06-21T17:21:45.058778",
+    "generated_content": {
+      "gemini": {
+        "title": "Phòng Trọ Sang Trọng 12m² - GIÁ CỰC ƯU ĐÃI 1.000.000đ/tháng - VỊ TRÍ VÀNG Cổ Nhuế 2!",
+        "description": "Cơ hội thuê phòng trọ hiện đại và tiện nghi tại vị trí vàng của Hà Nội! Phòng 12m² đầy đủ nội thất, đảm bảo sự sang trọng và thoải mái. Giá thuê cực ưu đãi chỉ 1.000.000đ/tháng, bạn không thể bỏ lỡ! Điện nước riêng, ổn định, tiện lợi. Sự kết hợp hoàn hảo giữa giá trị và chất lượng. Nhanh chóng đặt phòng trước khi nó hết! 🔒 An toàn tuyệt đối, yên tĩnh, phù hợp với mọi nhu cầu. Đừng bỏ lỡ cơ hội cuối cùng! ⏰",
+        "generation_time": 3.605957269668579
+      }
+    }
+  },
+  {
+    "room_info": {
+      "room_type": "tro",
+      "price": "2000000",
+      "area": "20",
+      "address": "Số 2, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội",
+      "amenities": [
+        "Tủ lạnh",
+        "Camera"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "3000",
+      "water_bill": "25000"
+    },
+    "timestamp": "2025-06-21T23:35:07.844257",
+    "generated_content": {
+      "gemini": {
+        "title": "GIÁ CỰC ƯU ĐÃI! Phòng Trọ Sang Trọng 20m², VỊ TRÍ VÀNG tại Hà Nội",
+        "description": "Cơ hội cuối cùng để thuê phòng trọ đầy đủ nội thất, rộng rãi thoáng mát, giá cực ưu đãi 2.000.000đ/tháng! Nằm tại số 2, Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội, phòng trọ này đảm bảo vị trí vàng, gần trung tâm nhưng lại yên tĩnh, giúp bạn có cuộc sống tiện lợi và thoải mái. Được trang bị đầy đủ nội thất, tủ lạnh, camera, bạn sẽ cảm thấy như ở nhà. Đừng bỏ lỡ cơ hội này! Sắp hết phòng, hãy liên hệ ngay để sở hữu căn phòng trọ sang trọng và hiện đại này!",
+        "generation_time": 4.005659103393555
+      }
+    }
+  }
+]

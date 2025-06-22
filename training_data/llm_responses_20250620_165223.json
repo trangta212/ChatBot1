@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng gần đại học bách khoa hà nội",
+    "timestamp": "2025-06-20T16:52:34.317108",
+    "responses": {
+      "gemini": "Error: 400 Client Error: Bad Request for url: https://openrouter.ai/api/v1/chat/completions"
+    }
+  }
+]

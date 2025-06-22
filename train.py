@@ -23,8 +23,17 @@ class LLMTrainer:
         self.models = {
             "gemini": {
                 "provider": "openrouter",
-                "model": "google/gemini-2.0-flash-exp:free"
+                "model": "meta-llama/llama-3.3-8b-instruct:free"
             },
+            # "gemini": {
+            #     "provider": "openrouter",
+            #     "model": "google/gemini-2.0-flash-exp:free"
+            # },
+            #  "gemini": {
+            #     "provider": "openrouter",
+            #     "model": "google/gemini-2.5-pro-exp-03-25"
+            # },
+           
         }
 
         self.results = []
@@ -59,14 +68,16 @@ class LLMTrainer:
         context = self.format_context_for_prompt(documents)
         analysis = analyze_query(query)
 
-        if 'process_category' in analysis['filters']:
-            # system_prompt = """
-            #     Bạn là trợ lý ảo cho một website đăng tin cho thuê phòng trọ và căn hộ.
-            #     Nhiệm vụ của bạn là giúp người dùng hiểu rõ các quy trình, hướng dẫn hoặc quy định liên quan (như thuê phòng, đăng tin, thanh toán, khiếu nại...).
-            #     Hãy trả lời dựa trên thông tin ngữ cảnh cung cấp. Nếu thông tin không đầy đủ, hãy nêu những gì bạn biết và khuyên người dùng liên hệ website để được hỗ trợ thêm.
+        if not documents:
+            system_prompt = """Bạn là trợ lý ảo cho một website đăng tin cho thuê phòng trọ và căn hộ.
+Nhiệm vụ của bạn là thông báo cho người dùng rằng không tìm thấy thông tin phù hợp và đề xuất họ thay đổi tiêu chí tìm kiếm.
+Luôn trả lời bằng tiếng Việt. Trả lời dễ hiểu, ngắn gọn, đáng yêu (có các icon đáng yêu)."""
+            user_prompt = f"""Yêu cầu tìm kiếm: {query}
 
-            #     Luôn trả lời bằng tiếng Việt. Trả lời rõ ràng, dễ hiểu và hữu ích, thân thiện.
-            #     """
+Hãy thông báo không tìm thấy thông tin phù hợp và đề xuất người dùng thay đổi tiêu chí tìm kiếm."""
+            return system_prompt, user_prompt
+
+        if 'process_category' in analysis['filters']:
             system_prompt = """Bạn là trợ lý ảo cho một website đăng tin cho thuê phòng trọ và căn hộ.
                     Hãy trả lời ngắn gọn
                     Tạo phản hồi có cấu trúc rõ ràng, tập trung vào các thông tin quan trọng nhất.    
@@ -83,8 +94,8 @@ Hãy giải thích quy trình một cách rõ ràng và dễ hiểu."""
             system_prompt = """Bạn là trợ lý ảo cho một website đăng tin cho thuê phòng trọ và căn hộ.
 Nhiệm vụ của bạn là hỗ trợ người dùng tìm được phòng phù hợp nhất dựa trên thông tin ngữ cảnh (danh sách các phòng được đề xuất).
 Nếu có nhiều kết quả, hãy tóm tắt các lựa chọn chính, so sánh ưu nhược điểm và đưa ra lời khuyên ngắn gọn chọn phòng. 
-Nếu không có phòng phù hợp, hãy thông báo không có kết quả và đề xuất người dùng thay đổi tiêu chí tìm kiếm.Chèn link url phòng vào.
-Luôn trả lời bằng tiếng Việt. Trả lời dễ hiểu ,ngắn gọn, đáng yêu (có các icon đáng yêu)."""
+Nếu không có phòng phù hợp, hãy thông báo không có kết quả và đề xuất người dùng thay đổi tiêu chí tìm kiếm.
+Luôn trả lời bằng tiếng Việt. Trả lời dễ hiểu ,ngắn gọn, trình bày gạch đầu dòng ý đầy đủ, có các icon đáng yêu (có các icon đáng yêu) thân thiện với người dùng. Bắt buộc thêm link phòng vào ghi là chi tiết phòng rồi để người dùng nhấn vào chứ không để nguyên link"""
             user_prompt = f"""Ngữ cảnh:
 {context}
 

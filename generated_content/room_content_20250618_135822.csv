@@ -1,0 +1,21 @@
+timestamp,model,room_name,room_type,area,price,address,district,city,generated_title,generated_description,generation_time,original_amenities,original_furniture,original_electricity_bill,original_water_bill
+2025-06-18T14:03:51.806154,gemini,,chungcu,123,1000000,"Số 1, Đội Cấn, Ba Đình, Hà Nội",,,"💎CCMN Đội Cấn 123m² - Full NT, Giá Sốc 1 Triệu! ⏰ Sắp Hết!","🔥 WOW! Bạn đang tìm kiếm một căn hộ chung cư rộng rãi, đầy đủ tiện nghi với mức giá không thể tin được ngay tại trung tâm Ba Đình? Đừng bỏ lỡ cơ hội hiếm có này! 📍
+
+🏠 Căn hộ 123m² SIÊU RỘNG RÃI, thoáng đãng, thiết kế hiện đại, tối ưu hóa không gian sống. Nằm ngay vị trí VÀNG trên phố Đội Cấn, bạn dễ dàng di chuyển đến mọi địa điểm trong thành phố, gần trường học, bệnh viện, siêu thị và các khu vui chơi giải trí.
+
+✨ FULL NỘI THẤT CAO CẤP, chỉ cần xách vali vào ở ngay! Trang bị đầy đủ máy giặt, tủ lạnh, giường, tủ, bàn ghế... Tất cả đều mới tinh, đảm bảo bạn sẽ có một cuộc sống tiện nghi và thoải mái nhất.
+
+💰 GIÁ THUÊ CỰC ƯU ĐÃI: Chỉ 1.000.000 VNĐ/tháng! (Điện: 2000đ/KWh, Nước: 20.000đ/người). Một mức giá không tưởng cho một căn hộ tuyệt vời như vậy!
+
+🔒 AN TOÀN TUYỆT ĐỐI: Hệ thống an ninh 24/7, camera giám sát, đảm bảo bạn luôn an tâm khi sống tại đây.
+
+🔔 Đừng chần chừ! Số lượng căn hộ có hạn, CƠ HỘI CUỐI CÙNG để sở hữu một không gian sống lý tưởng với mức giá không thể tốt hơn. Liên hệ ngay hôm nay để được tư vấn và xem phòng trực tiếp! 📞 Nhanh tay kẻo lỡ!",6.380228042602539,"['Máy giặt', 'Tủ lạnh']",Đầy đủ,2000,20000
+2025-06-18T16:23:57.495172,gemini,,chungcumini,20,4000000,"Số 1, Hải Châu  I, Hải Châu, Đà Nẵng",,,"💎CCMN Hải Châu - FULL Nội Thất, Vị Trí VÀNG! Sắp Hết Phòng!⏰","🔥 KHÔNG THỂ TIN ĐƯỢC! Sở hữu ngay căn hộ mini FULL NỘI THẤT, diện tích 20m² tại trung tâm Hải Châu, Đà Nẵng! 📍 Vị trí VÀNG ngay số 1 Hải Châu I, dễ dàng di chuyển đến mọi điểm nóng của thành phố. 
+
+✨ Bước vào căn hộ, bạn sẽ cảm nhận ngay sự TIỆN NGHI và HIỆN ĐẠI. FULL NỘI THẤT cao cấp, chỉ cần xách vali vào ở ngay! Không gian sống RỘNG RÃI, thoáng đãng, tràn ngập ánh sáng tự nhiên, mang đến cảm giác thư thái sau một ngày dài.
+
+🔒 AN TOÀN TUYỆT ĐỐI với hệ thống an ninh 24/7, camera giám sát, đảm bảo cuộc sống riêng tư và an tâm. Khu vực dân cư văn minh, yên tĩnh, lý tưởng cho sinh viên và người đi làm.
+
+💰 Giá thuê chỉ 4,000,000đ/tháng - quá hời cho một căn hộ mini đẳng cấp như thế này! Điện 2000đ/KWh, nước 100k/người.
+
+⏰ Đừng bỏ lỡ CƠ HỘI CUỐI CÙNG để sở hữu không gian sống lý tưởng này! SỐ LƯỢNG PHÒNG CÓ HẠN! Liên hệ ngay để được tư vấn và xem phòng!",5.061078071594238,,Đầy đủ,2000,100

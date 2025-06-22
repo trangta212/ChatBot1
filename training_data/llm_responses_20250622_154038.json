@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội giá dưới 4 triệu có đầy đủ nội thất giờ giấc tự do",
+    "timestamp": "2025-06-22T15:40:40.327339",
+    "responses": {
+      "gemini": "Chào bạn! Tôi có thể giúp bạn tìm phòng trọ phù hợp \n\nDựa trên yêu cầu của bạn, tôi đã tìm được 2 lựa chọn sau:\n\n* **Phòng trọ cho thuê cạnh Đại học kinh tế QD** (1,900,000đ/tháng): Không có máy lạnh, nhưng có kệ bếp và máy giặt. Giờ giấc tự do. [chi tiết phòng](http://localhost:3000/user/room-details/4931)\n* **Cho thuê phòng trọ tại ngõ 121 Kim Ngưu** (2,100,000đ/tháng): Có máy lạnh, máy giặt và không chung chủ. Giờ giấc tự do. [chi tiết phòng](http://localhost:3000/user/room-details/3502)\n\nLời khuyên: Cả 2 lựa chọn đều phù hợp với yêu cầu giá dưới 4 triệu và giờ giấc tự do. Tuy nhiên, nếu bạn ưu tiên máy lạnh, thì phòng 2 là lựa chọn tốt hơn. Nếu bạn muốn giá rẻ hơn, thì phòng 1 là lựa chọn tốt hơn. \n\nHy vọng bạn tìm được phòng phù hợp!"
+    }
+  }
+]

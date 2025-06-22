@@ -1,0 +1,9 @@
+[
+  {
+    "query": "trọ 3 triệu phạm văn đồng hà nội",
+    "timestamp": "2025-06-18T14:01:58.138453",
+    "responses": {
+      "gemini": "Chào bạn 👋, mình thấy có 3 phòng có thể phù hợp với bạn nè:\n\n*   **Phòng 1:** Giá rẻ nhất (1.2 triệu), có máy lạnh và hầm để xe, nhưng ở khu Mỹ Đình hơi xa Phạm Văn Đồng đó nha 😥. Xem chi tiết tại: [http://localhost:3000/user/room-details/3779](http://localhost:3000/user/room-details/3779)\n*   **Phòng 2:** Giá 1.6 triệu, ở Khương Đình, Thanh Xuân, không có tiện ích gì thêm. Khu này cũng hơi xa Phạm Văn Đồng luôn 😓. Xem chi tiết tại: [http://localhost:3000/user/room-details/4425](http://localhost:3000/user/room-details/4425)\n*   **Phòng 3:** Giá cao nhất (1.9 triệu), gần Đại học Kinh tế Quốc dân, có kệ bếp, máy giặt, giờ giấc tự do. Tuy nhiên, phòng này lại ở Hai Bà Trưng, vẫn xa Phạm Văn Đồng bạn ạ 🥺. Xem chi tiết tại: [http://localhost:3000/user/room-details/4931](http://localhost:3000/user/room-details/4931)\n\n**Lời khuyên:** Vì cả 3 phòng đều không ở khu Phạm Văn Đồng, bạn có thể cân nhắc xem tiện ích nào quan trọng với bạn nhất (ví dụ: giá rẻ, có máy lạnh, hay giờ giấc tự do) để chọn phòng phù hợp nha 😉. Hoặc bạn có thể thử tìm kiếm lại với khu vực lân cận Phạm Văn Đồng xem sao nhé 🥰!"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ gần đại học bách khoa hà nội có giá dưới 4 triệu có đầy đủ nội thất giờ giấc tự do",
+    "timestamp": "2025-06-22T15:45:32.144520",
+    "responses": {
+      "gemini": "Dưới đây là tóm tắt các lựa chọn phù hợp với yêu cầu của bạn:\n\n* **Phòng trọ cho thuê cạnh Đại học kinh tế QD**: \n + Địa chỉ: 63/41/27 Phố Phố Vọng, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội\n + Giá: 1,900,000đ/tháng\n + Tiện ích: Có kệ bếp, Có máy giặt, Giờ giấc tự do\n + Link: http://localhost:3000/user/room-details/4931\n* **Cho thuê phòng trọ tại ngõ 121 Kim Ngưu**: \n + Địa chỉ: Kim Ngưu, Phường Thanh Lương, Quận Hai Bà Trưng, Hà Nội\n + Giá: 2,100,000đ/tháng\n + Tiện ích: Có máy lạnh, Có máy giặt, Không chung chủ, Giờ giấc tự do\n + Link: http://localhost:3000/user/room-details/3502\n\nLời khuyên: \n- Cả hai lựa chọn đều đáp ứng yêu cầu về giá dưới 4 triệu và giờ giấc tự do.\n- Nếu bạn ưu tiên phòng trọ có máy lạnh và không chung chủ, Phòng trọ tại ngõ 121 Kim Ngưu có thể là lựa chọn tốt hơn.\n- Nếu bạn cần phòng trọ có kệ bếp với giá hơn, Phòng trọ cho thuê cạnh Đại học kinh tế QD có thể là lựa chọn phù hợp."
+    }
+  }
+]

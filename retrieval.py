@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import SentenceTransformerEmbeddings
 from underthesea import word_tokenize
 import re
 import unicodedata
@@ -7,22 +7,21 @@ import math
 import requests
 from geopy.geocoders import Nominatim
 from functools import lru_cache
-import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
 
 # Danh sách kiểu nhà hợp lệ
 valid_house_types = ['nhatro', 'chungcumini', 'nhanguyencan', 'chungcu', 'canhodichvu']
 
-# Định nghĩa các nhóm từ để so sánh vector
-house_type_groups = {
-    "nhatro": ["phòng trọ", "nhà trọ", "phòng cho thuê", "trọ", "nhatro"],
-    "chungcumini": ["ccmn", "chung cư mini", "căn hộ mini", "chungcumini"],
-    "nhanguyencan": ["nhà nguyên căn", "nhà thuê", "nhà riêng", "nhanguyencan"],
-    "chungcu": ["căn hộ", "chung cư", "căn hộ chung cư", "chungcu"],
-    "canhodichvu": ["căn hộ dịch vụ", "can ho dich vu", "canhodichvu", "căn hộ cao cấp"]
+# Từ điển đồng nghĩa cho kiểu nhà
+synonyms = {
+    "phòng trọ": ["nhà trọ", "phòng cho thuê", "phòng trọ", "trọ", "nhatro","phòng","phong tro"],
+    "chung cư mini": ["ccmn", "chung cư mini", "căn hộ mini", "chungcumini"],
+    "nhà nguyên căn": ["nhà nguyên căn", "nhà thuê", "nhà riêng", "nhanguyencan"],
+    "chung cư": ["căn hộ", "chung cư", "căn hộ chung cư", "chungcu"],
+    "căn hộ dịch vụ": ["can ho dich vu", "canhodichvu", "can ho dich vu", "can ho dich vu cao cap"]
 }
 
-amenities_groups = {
+# Từ điển đồng nghĩa cho tiện ích
+amenities_synonyms = {
     "đầy đủ nội thất": ["đầy đủ nội thất", "full nội thất", "nội thất đầy đủ", "đầy đủ tiện nghi"],
     "điều hòa": ["điều hòa", "máy lạnh", "điều hoà", "máy điều hòa"],
     "máy giặt": ["máy giặt", "máy giặt chung", "máy giặt riêng"],
@@ -40,7 +39,7 @@ process_keywords = {
         "hướng dẫn đăng bài", "cách đăng bài", "đăng bài như thế nào", 
         "hướng dẫn đăng phòng", "làm sao để đăng phòng", "đăng tin phòng", 
         "hướng dẫn đăng tin", "cách đăng tin phòng","cách đăng tin", "đăng tin phòng như thế nào",
-        "đăng tin ntn","đăng bài"
+        "đăng tin ntn"
     ],
     "phương thức thanh toán": [
         "quy trình thanh toán", "cách thanh toán", "thanh toán như thế nào", 
@@ -69,13 +68,9 @@ process_keywords = {
         "lưu ý khi đăng phòng", "lưu ý khi đăng tin", 
         "lưu ý", "những lưu ý khi đăng"
     ],
-    "hợp đồng": [
-        "hợp đồng", "hợp đồng thuê", "hợp đồng thuê phòng",
-        "hợp đồng thuê nhà", "hợp đồng thuê căn hộ", "hợp đồng thuê chung cư"
-    ],
 }
 
-# Danh sách quận/huyện và thành phố
+# Danh sách quận/huyện được biết
 known_districts = [
     # Hà Nội
     "ba đình", "hoàn kiếm", "tây hồ", "long biên", "cầu giấy", "đống đa", "hai bà trưng", 
@@ -100,6 +95,7 @@ known_districts = [
     "ninh kiều", "bình thủy", "cái răng", "ô môn", "thốt nốt"
 ]
 
+# Danh sách thành phố được biết
 city_patterns = [
     # Hà Nội và biến thể
     "hà nội", "hanoi", "ha noi", "thủ đô", "thu do", "hn",
@@ -139,57 +135,12 @@ city_patterns = [
     "việt trì", "viet tri", "phú thọ", "phu tho"
 ]
 
-class SemanticSimilarity:
-    def __init__(self, embedding_model):
-        self.embedding_model = embedding_model
-        self.cache = {}  # Cache để lưu embeddings đã tính
-        
-    def get_embedding(self, text):
-        """Lấy embedding cho văn bản"""
-        if text in self.cache:
-            return self.cache[text]
-        
-        # Tạo embedding
-        embedding = self.embedding_model.embed_query(text)
-        self.cache[text] = np.array(embedding)
-        return self.cache[text]
-    
-    def calculate_similarity(self, text1, text2):
-        """Tính độ tương đồng cosine giữa hai văn bản"""
-        emb1 = self.get_embedding(text1).reshape(1, -1)
-        emb2 = self.get_embedding(text2).reshape(1, -1)
-        similarity = cosine_similarity(emb1, emb2)[0][0]
-        return similarity
-    
-    def find_best_match(self, query_text, candidate_groups, threshold=0.7):
-        """
-        Tìm nhóm phù hợp nhất cho query_text từ candidate_groups
-        """
-        best_match = None
-        best_similarity = 0
-        
-        for group_name, synonyms in candidate_groups.items():
-            # Tính similarity với tất cả từ trong nhóm
-            max_sim_in_group = 0
-            for synonym in synonyms:
-                similarity = self.calculate_similarity(query_text, synonym)
-                max_sim_in_group = max(max_sim_in_group, similarity)
-            
-            # Cập nhật kết quả tốt nhất
-            if max_sim_in_group > best_similarity:
-                best_similarity = max_sim_in_group
-                best_match = group_name
-        
-        # Chỉ trả về kết quả nếu vượt ngưỡng
-        if best_similarity >= threshold:
-            return best_match, best_similarity
-        
-        return None, 0
-
-# Các hàm hỗ trợ
 def haversine_distance(lat1, lon1, lat2, lon2):
     """Tính khoảng cách giữa hai điểm dựa vào kinh độ, vĩ độ (đơn vị: km)"""
+    # Chuyển đổi độ sang radian
     lat1, lon1, lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])
+    
+    # Công thức haversine
     dlat = lat2 - lat1
     dlon = lon2 - lon1
     a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
@@ -201,6 +152,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
 def geocode_address(address, city=None):
     """Chuyển địa chỉ thành tọa độ (kinh độ, vĩ độ)"""
     try:
+        # Thêm tên thành phố nếu có để tăng độ chính xác
         if city:
             full_address = f"{address}, {city}, Việt Nam"
         else:
@@ -216,6 +168,7 @@ def geocode_address(address, city=None):
                 "address": location.address
             }
         else:
+            # Backup với OpenStreetMap API nếu Nominatim không trả kết quả
             url = f"https://nominatim.openstreetmap.org/search?q={full_address}&format=json&limit=1"
             response = requests.get(url)
             if response.status_code == 200 and response.json():
@@ -236,7 +189,7 @@ def extract_radius_from_query(query):
         (r'trong\s+(?:vòng|bán\s+kính)\s+(\d+(?:\.\d+)?)\s*(?:km|kilomet|kilometer)', 1),
         (r'(?:bán\s+kính|khoảng\s+cách)\s+(\d+(?:\.\d+)?)\s*(?:km|kilomet|kilometer)', 1),
         (r'cách\s+(?:khoảng|tầm)\s+(\d+(?:\.\d+)?)\s*(?:km|kilomet|kilometer)', 1),
-        (r'(\d+(?:\.\d+)?)\s*(?:km|kilomet|kilometer)', 1)
+        (r'(\d+(?:\.\d+)?)\s*(?:km|kilomet|kilometer)', 1)  # Pattern đơn giản hơn, ưu tiên thấp
     ]
     
     for pattern, group in radius_patterns:
@@ -261,6 +214,7 @@ def extract_address_from_query(query):
         match = re.search(pattern, query, re.IGNORECASE)
         if match:
             address = match.group(group).strip()
+            # Loại bỏ các từ khóa không phải địa chỉ
             noise_words = ["giá rẻ", "phòng trọ", "căn hộ", "giá tốt", "gần đây"]
             for word in noise_words:
                 address = address.replace(word, "").strip()
@@ -268,6 +222,7 @@ def extract_address_from_query(query):
     
     return None
 
+# Tiền xử lý câu hỏi tiếng Việt
 def preprocess_vietnamese_text(text):
     text = re.sub(r"[^\w\s]", "", text.lower())
     text = ' '.join(word_tokenize(text))
@@ -287,10 +242,11 @@ def normalize_location(text):
     
     text = text.lower().strip()
     
+    # Xử lý đặc biệt cho quận số - CẢI TIẾN để bắt đúng toàn bộ số
     quan_patterns = [
-        (r"quận\s+(\d+)", "quan{0}"),
-        (r"q\.?\s*(\d+)", "quan{0}"),
-        (r"quan\s*(\d+)", "quan{0}"),
+        (r"quận\s+(\d+)", "quan{0}"),  # quận 3 -> quan3, quận 10 -> quan10
+        (r"q\.?\s*(\d+)", "quan{0}"),  # q3, q.3, q10, q.10
+        (r"quan\s*(\d+)", "quan{0}"),  # quan 3 -> quan3
     ]
     
     for pattern, template in quan_patterns:
@@ -298,30 +254,37 @@ def normalize_location(text):
         if quan_match:
             district_number = quan_match.group(1)
             result = template.format(district_number)
+            # Debug để xác nhận chuỗi số đúng
             return result
     
+    # Xử lý các trường hợp không phải quận số
     result = remove_vietnamese_accents(text)
     result = re.sub(r'\s+', '', result)
     return result
-
 def contains_district_number(text, number):
+    # Tìm đúng "quận 10", không khớp "quận 1"
     pattern = r"\bquận\s*0*{}\b".format(number)
     return re.search(pattern, text.lower()) is not None
-
 def extract_all_district_numbers(text):
+    # Trả về list các số quận xuất hiện trong text
     return re.findall(r"\bquận\s*0*(\d{1,2})\b", text.lower())
 
 def clean_location(loc_raw: str) -> str:
-    """Loại bỏ tiền tố như 'quận', 'huyện', 'thành phố', 'tp' khỏi chuỗi vị trí."""
+    """
+    Loại bỏ tiền tố như 'quận', 'huyện', 'thành phố', 'tp' khỏi chuỗi vị trí.
+    Xử lý đặc biệt cho quận số để tránh nhầm lẫn.
+    """
     if not loc_raw:
         return ""
     
     loc_raw = loc_raw.strip().lower()
     
+    # Xử lý đặc biệt cho quận số
     quan_match = re.search(r"quận\s+(\d+)", loc_raw, re.IGNORECASE)
     if quan_match:
-        return f"quận {quan_match.group(1)}"
+        return f"quận {quan_match.group(1)}"  # Giữ nguyên "quận X" để tránh nhầm lẫn
     
+    # Xử lý các trường hợp khác
     loc_clean = re.sub(r"^(quận|huyện|thành phố|tp\.?)\s*", "", loc_raw, flags=re.IGNORECASE)
     return loc_clean
 
@@ -340,45 +303,29 @@ def extract_location_from_address(address):
             break
     return result
 
-def analyze_query(query, semantic_similarity=None):
-    """
-    Phân tích query sử dụng semantic similarity nếu có
-    """
+def analyze_query(query):
     query = query.lower()
     filters = {}
     text_for_vector_search = query
     
     # Kiểm tra truy vấn về quy trình
-    if semantic_similarity:
-        # Sử dụng semantic similarity để tìm category phù hợp nhất
-        best_category = None
-        best_similarity = 0
-        for category, keywords in process_keywords.items():
-            for keyword in keywords:
-                similarity = semantic_similarity.calculate_similarity(query, keyword)
-                if similarity > best_similarity and similarity >= 0.75:
-                    best_similarity = similarity
-                    best_category = category
-        
-        if best_category:
-            filters['process_category'] = best_category
-            text_for_vector_search = text_for_vector_search.replace(best_category, '')
-    else:
-        # Sử dụng phương pháp cũ nếu không có semantic similarity
-        for category, keywords in process_keywords.items():
-            for keyword in keywords:
-                if keyword in query:
-                    filters['process_category'] = category
-                    text_for_vector_search = text_for_vector_search.replace(keyword, '')
-                    break
-            if 'process_category' in filters:
+    for category, keywords in process_keywords.items():
+        for keyword in keywords:
+            if keyword in query:
+                filters['process_category'] = category
+                text_for_vector_search = text_for_vector_search.replace(keyword, '')
                 break
+        if 'process_category' in filters:
+            break
 
     # Nếu không phải truy vấn quy trình, xử lý các bộ lọc phòng
     if 'process_category' not in filters:
         # Trích xuất kinh độ, vĩ độ, bán kính
         lat_lon_pattern = r"(?:kinh độ|longitude|lon)\s*[:=]?\s*([-]?\d+\.?\d*)\s*(?:vĩ độ|latitude|lat)\s*[:=]?\s*([-]?\d+\.?\d*)"
+        
+        # Trích xuất bán kính tìm kiếm
         radius = extract_radius_from_query(query)
+        
         lat_lon_match = re.search(lat_lon_pattern, query)
         
         if lat_lon_match:
@@ -392,14 +339,23 @@ def analyze_query(query, semantic_similarity=None):
         # Trích xuất quận/huyện, thành phố
         district = None
         city = None
+        # for d in known_districts:
+        #     if d in query:
+        #         district = clean_location(d)
+        #         print(f"[DEBUG] Tìm thấy quận/huyện: '{d}' -> '{district}'")
+        #         break
+         # Ưu tiên xử lý quận số trước để đảm bảo bắt đúng
         district_number_pattern = r"quận\s+(\d+)"
         district_match = re.search(district_number_pattern, query.lower())
         
         if district_match:
             district_number = district_match.group(1)
-            district = f"quận {district_number}"
+            district = f"quận {district_number}"  # Giữ nguyên định dạng "quận X"
+            
+            # Thử nghiệm normalize để xác nhận kết quả
             district_norm = normalize_location(district)
         else:
+            # Thử các dạng khác của quận số như q10, q.10
             q_number_pattern = r"q\.?\s*(\d+)"
             q_match = re.search(q_number_pattern, query.lower())
             
@@ -407,6 +363,7 @@ def analyze_query(query, semantic_similarity=None):
                 district_number = q_match.group(1)
                 district = f"quận {district_number}"
             else:
+                # Tìm quận/huyện thông thường
                 for d in known_districts:
                     if d in query.lower():
                         district = clean_location(d)
@@ -426,6 +383,8 @@ def analyze_query(query, semantic_similarity=None):
         # Xử lý địa chỉ người dùng
         user_address = extract_address_from_query(query)
         if user_address:
+            
+            # Chuyển địa chỉ thành tọa độ
             coords = geocode_address(user_address, city)
             if coords:
                 filters['location'] = {
@@ -434,6 +393,9 @@ def analyze_query(query, semantic_similarity=None):
                     'radius': radius,
                     'address': coords['address']
                 }
+
+                
+                # Đánh dấu từ khóa địa chỉ để loại bỏ khỏi vector search
                 text_for_vector_search = text_for_vector_search.replace(user_address, '')
 
         # Trích xuất giá
@@ -460,76 +422,53 @@ def analyze_query(query, semantic_similarity=None):
                 break
         
         # Trích xuất loại nhà
-        if semantic_similarity:
-            query_words = query.split()
-            for word in query_words:
-                house_type_match, similarity = semantic_similarity.find_best_match(
-                    word, house_type_groups, threshold=0.8
-                )
-                if house_type_match:
-                    filters['type'] = house_type_match
-                    text_for_vector_search = text_for_vector_search.replace(word, '')
+        for house_type, synonym_list in synonyms.items():
+            for synonym in synonym_list:
+                if synonym in query:
+                    # Ánh xạ từ khóa thành giá trị trong valid_house_types
+                    for valid_type in valid_house_types:
+                        if valid_type in synonym_list:
+                            filters['type'] = valid_type
+                            text_for_vector_search = text_for_vector_search.replace(synonym, '')
+                            break
                     break
-        else:
-            for house_type, synonyms in house_type_groups.items():
-                for synonym in synonyms:
-                    if synonym in query:
-                        filters['type'] = house_type
-                        text_for_vector_search = text_for_vector_search.replace(synonym, '')
-                        break
-                if 'type' in filters:
-                    break
+            if 'type' in filters:
+                break
 
         # Trích xuất tiện ích
         amenities = []
-        if semantic_similarity:
-            query_phrases = [query]
-            query_words = query.split()
-            
-            # Thêm logic tách cụm từ tiện ích
-            amenity_phrases = []
-            for i in range(len(query_words)):
-                for j in range(i+1, min(i+4, len(query_words)+1)):
-                    phrase = ' '.join(query_words[i:j])
-                    amenity_phrases.append(phrase)
-            
-            query_phrases.extend(amenity_phrases)
-            
-            for phrase in query_phrases:
-                amenity_match, similarity = semantic_similarity.find_best_match(
-                    phrase, amenities_groups, threshold=0.75
-                )
-                if amenity_match and amenity_match not in amenities:
-                    amenities.append(amenity_match)
-                    text_for_vector_search = text_for_vector_search.replace(phrase, '')
-        else:
-            for amenity, synonyms in amenities_groups.items():
-                for synonym in synonyms:
-                    if synonym in query:
-                        amenities.append(amenity)
-                        text_for_vector_search = text_for_vector_search.replace(synonym, '')
-                        break
-        
+        for amenity, synonym_list in amenities_synonyms.items():
+            for synonym in synonym_list:
+                if synonym in query:
+                    amenities.append(amenity)
+                    text_for_vector_search = text_for_vector_search.replace(synonym, '')
+                    break
         if amenities:
             filters['amenities'] = amenities
+        
+        # --- Bổ sung trích xuất giá điện, nước ---
+        electricity_pattern = r"(?:giá|tiền)?\s*điện\s*(?:dưới|<=|<|tối đa|không quá)?\s*([\d\.]+)\s*(?:đ|vnd|vnđ|đồng)?"
+        water_pattern = r"(?:giá|tiền)?\s*nước\s*(?:dưới|<=|<|tối đa|không quá)?\s*([\d\.]+)\s*(?:đ|vnd|vnđ|đồng)?"
 
-    # Làm sạch text cho vector search
-    text_for_vector_search = preprocess_vietnamese_text(text_for_vector_search)
-    text_for_vector_search = ' '.join(text_for_vector_search.split())
-    
+        elec_match = re.search(electricity_pattern, query)
+        if elec_match:
+            filters['electricity_price_max'] = float(elec_match.group(1).replace('.', ''))
+
+        water_match = re.search(water_pattern, query)
+        if water_match:
+            filters['water_price_max'] = float(water_match.group(1).replace('.', ''))
+        
+    text_for_vector_search = re.sub(r'\s+', ' ', text_for_vector_search.strip())
     return {
         'vector_query': text_for_vector_search,
         'filters': filters
     }
 
-# Khởi tạo embedding model
-embedding_model = HuggingFaceEmbeddings(
+# Khởi tạo embedding
+embedding_model = SentenceTransformerEmbeddings(
     model_name="keepitreal/vietnamese-sbert",
     model_kwargs={"device": "cpu"}
 )
-
-# Khởi tạo semantic similarity
-semantic_similarity = SemanticSimilarity(embedding_model)
 
 # Load vector DB
 vector_store = Chroma(
@@ -539,10 +478,11 @@ vector_store = Chroma(
 )
 
 def retrieve_documents(query, top_k=3):
-    analysis = analyze_query(query, semantic_similarity)
+    analysis = analyze_query(query)
     processed_query = preprocess_vietnamese_text(analysis['vector_query'])
     filters = analysis['filters']
     
+
     # Nếu là truy vấn quy trình, thử tìm kiếm ngữ nghĩa nếu không có từ khóa khớp
     if 'process_category' not in filters:
         # Kiểm tra xem truy vấn có liên quan đến quy trình bằng vector search
@@ -572,6 +512,7 @@ def retrieve_documents(query, top_k=3):
         for doc, meta in zip(collection['documents'], collection['metadatas'])
     ]
     
+    
     filtered_docs = []
     reject_reasons = {}
     
@@ -579,6 +520,7 @@ def retrieve_documents(query, top_k=3):
         doc = doc_item["document"]
         valid = True
         doc_reasons = []
+        
         
         # Xử lý truy vấn quy trình
         if 'process_category' in filters:
@@ -604,7 +546,7 @@ def retrieve_documents(query, top_k=3):
                         valid = False
                 except (ValueError, TypeError) as e:
                     print(f"[DEBUG] Lỗi tính khoảng cách: {str(e)}")
-    
+        
             # Kiểm tra giá
             if 'price_min' in filters and 'price_per_month' in doc.metadata:
                 try:
@@ -636,36 +578,36 @@ def retrieve_documents(query, top_k=3):
                 if not city_norm and 'city' in extracted:
                     city_norm = normalize_location(extracted['city'])
             if 'district' in filters:
-                filter_district_raw = filters['district']
-                filter_district_norm = normalize_location(filter_district_raw)
-                filter_quan_match = re.search(r"quan(\d+)", filter_district_norm)
-                filter_quan_number = filter_quan_match.group(1) if filter_quan_match else None
+                        filter_district_raw = filters['district']
+                        filter_district_norm = normalize_location(filter_district_raw)
+                        filter_quan_match = re.search(r"quan(\d+)", filter_district_norm)
+                        filter_quan_number = filter_quan_match.group(1) if filter_quan_match else None
 
-                # Lấy district từ metadata
-                doc_district_raw = doc.metadata.get('district', '')
-                doc_district_norm = normalize_location(doc_district_raw)
-                # Lấy address và chunk_content
-                address = doc.metadata.get('address', '')
-                chunk_content = doc.metadata.get('chunk_content', '')
+                        # Lấy district từ metadata
+                        doc_district_raw = doc.metadata.get('district', '')
+                        doc_district_norm = normalize_location(doc_district_raw)
+                        # Lấy address và chunk_content
+                        address = doc.metadata.get('address', '')
+                        chunk_content = doc.metadata.get('chunk_content', '')
 
-                found = False
-                # 1. So sánh trường district
-                if filter_quan_number and doc_district_norm == f"quan{filter_quan_number}":
-                    found = True
-                # 2. So sánh trong address
-                elif filter_quan_number and contains_district_number(address, filter_quan_number):
-                    found = True
-                # 3. So sánh trong chunk_content
-                elif filter_quan_number and contains_district_number(chunk_content, filter_quan_number):
-                    found = True
-                # 4. Nếu không phải quận số, so sánh như cũ
-                elif not filter_quan_number and (doc_district_norm == filter_district_norm):
-                    found = True
+                        found = False
+                        # 1. So sánh trường district
+                        if filter_quan_number and doc_district_norm == f"quan{filter_quan_number}":
+                            found = True
+                        # 2. So sánh trong address
+                        elif filter_quan_number and contains_district_number(address, filter_quan_number):
+                            found = True
+                        # 3. So sánh trong chunk_content
+                        elif filter_quan_number and contains_district_number(chunk_content, filter_quan_number):
+                            found = True
+                        # 4. Nếu không phải quận số, so sánh như cũ
+                        elif not filter_quan_number and (doc_district_norm == filter_district_norm):
+                            found = True
 
-                if not found:
-                    reason = f"Không tìm thấy quận {filter_quan_number or filter_district_norm} trong tài liệu"
-                    doc_reasons.append(reason)
-                    valid = False
+                        if not found:
+                            reason = f"Không tìm thấy quận {filter_quan_number or filter_district_norm} trong tài liệu"
+                            doc_reasons.append(reason)
+                            valid = False
 
             if 'city' in filters:
                 filter_city_norm = normalize_location(filters['city'])
@@ -678,64 +620,70 @@ def retrieve_documents(query, top_k=3):
             if 'type' in filters and 'type' in doc.metadata:
                 filter_type = filters['type'].lower()
                 doc_type = doc.metadata['type'].lower()
-                if semantic_similarity:
-                    similarity = semantic_similarity.calculate_similarity(filter_type, doc_type)
-                    if similarity < 0.8:  # Ngưỡng tương đồng cho loại nhà
-                        reason = f"Loại nhà '{filter_type}' không khớp với '{doc_type}' (similarity: {similarity:.3f})"
-                        doc_reasons.append(reason)
-                        valid = False
-                else:
-                    matched = False
-                    for key, synonyms_list in house_type_groups.items():
-                        if filter_type in synonyms_list and doc_type in synonyms_list:
-                            matched = True
-                            break
-                    if not matched and filter_type != doc_type:
-                        reason = f"Loại nhà '{filter_type}' không khớp với '{doc_type}'"
-                        doc_reasons.append(reason)
-                        valid = False
+                matched = False
+                for key, synonyms_list in synonyms.items():
+                    if filter_type in synonyms_list and doc_type in synonyms_list:
+                        matched = True
+                        break
+                if not matched and filter_type != doc_type:
+                    reason = f"Loại nhà '{filter_type}' không khớp với '{doc_type}'"
+                    doc_reasons.append(reason)
+                    valid = False
 
             # Kiểm tra tiện ích
             if 'amenities' in filters:
                 for amenity in filters['amenities']:
                     matched = False
-                    if semantic_similarity:
-                        # Kiểm tra trong metadata
-                        if 'full_furnishing' in doc.metadata:
-                            similarity = semantic_similarity.calculate_similarity(amenity, doc.metadata['full_furnishing'])
-                            if similarity >= 0.75:
-                                matched = True
-                        if 'extensions' in doc.metadata:
-                            similarity = semantic_similarity.calculate_similarity(amenity, doc.metadata['extensions'])
-                            if similarity >= 0.75:
-                                matched = True
-                        # Kiểm tra trong nội dung
-                        similarity = semantic_similarity.calculate_similarity(amenity, doc.page_content)
-                        if similarity >= 0.75:
+                    if amenity == "đầy đủ nội thất" and 'full_furnishing' in doc.metadata:
+                        if any(syn in doc.metadata['full_furnishing'].lower() for syn in amenities_synonyms[amenity]):
                             matched = True
-                    else:
-                        if amenity == "đầy đủ nội thất" and 'full_furnishing' in doc.metadata:
-                            if any(syn in doc.metadata['full_furnishing'].lower() for syn in amenities_groups[amenity]):
-                                matched = True
-                        if 'extensions' in doc.metadata:
-                            if any(syn in doc.metadata['extensions'].lower() for syn in amenities_groups[amenity]):
-                                matched = True
-                        if any(syn in doc.page_content.lower() for syn in amenities_groups[amenity]):
+                    if 'extensions' in doc.metadata:
+                        if any(syn in doc.metadata['extensions'].lower() for syn in amenities_synonyms[amenity]):
                             matched = True
-                    
+                    if any(syn in doc.page_content.lower() for syn in amenities_synonyms[amenity]):
+                        matched = True
                     if not matched:
                         reason = f"Không có tiện ích '{amenity}'"
                         doc_reasons.append(reason)
                         valid = False
+
+            # --- Bổ sung lọc giá điện ---
+            if 'electricity_price_max' in filters and 'electricity_bill' in doc.metadata:
+                try:
+                    elec_price = float(doc.metadata['electricity_bill'])
+                    if elec_price > filters['electricity_price_max']:
+                        reason = f"Tiền điện {elec_price:,}đ > mức tối đa {filters['electricity_price_max']:,}đ"
+                        doc_reasons.append(reason)
+                        valid = False
+                except (ValueError, TypeError):
+                    pass
+            # --- Bổ sung lọc giá nước ---
+            if 'water_price_max' in filters and 'water_price' in doc.metadata:
+                try:
+                    water_price = float(doc.metadata['water_price'])
+                    if water_price > filters['water_price_max']:
+                        reason = f"Tiền nước {water_price:,}đ > mức tối đa {filters['water_price_max']:,}đ"
+                        doc_reasons.append(reason)
+                        valid = False
+                except (ValueError, TypeError):
+                    pass
 
         if valid:
             filtered_docs.append(doc_item)
         else:
             reject_reasons[i] = doc_reasons
     
+    # In số lượng tài liệu hợp lệ thực tế
+    
     # Sắp xếp theo khoảng cách (nếu có tọa độ) hoặc giá (cho phòng), không sắp xếp cho quy trình
     if 'process_category' not in filters and 'location' in filters:
         filtered_docs.sort(key=lambda x: x.get("distance", float('inf')))
+        
+        # In khoảng cách của các kết quả sau khi sắp xếp
+        for i, doc_item in enumerate(filtered_docs[:min(top_k, len(filtered_docs))]):
+            doc = doc_item["document"]
+            distance = doc_item.get("distance", float('inf'))
+            distance_str = f"{distance:.2f}km" if distance != float('inf') else "Không rõ"
     elif 'process_category' not in filters:
         filtered_docs.sort(key=lambda x: x["price"])
     
@@ -750,9 +698,6 @@ def retrieve_documents(query, top_k=3):
     if reject_reasons:
         for idx, reasons in list(reject_reasons.items())[:10]:
             doc_name = docs[idx]["document"].metadata.get('room_name', docs[idx]["document"].metadata.get('category', f'Tài liệu {idx+1}'))
-            print(f"\nTài liệu '{doc_name}' bị loại vì:")
-            for reason in reasons:
-                print(f"  - {reason}")
     
     if filtered_docs:
         print("\n=== CHI TIẾT TÀI LIỆU HỢP LỆ ===")
@@ -768,8 +713,9 @@ def retrieve_documents(query, top_k=3):
                 
                 # Hiển thị khoảng cách nếu có
                 if 'location' in filters and 'distance' in doc_item and doc_item['distance'] != float('inf'):
+                    # Thêm thông tin khoảng cách vào metadata để hiển thị trong kết quả
                     doc.metadata['distance_km'] = f"{doc_item['distance']:.2f}"
-                    print(f"  distance: {doc.metadata['distance_km']}km")
+
     
     if not filtered_docs:
         print("Không tìm thấy kết quả phù hợp với điều kiện lọc.")
@@ -780,7 +726,7 @@ def retrieve_documents(query, top_k=3):
 
 if __name__ == "__main__":
     queries = [
-        "Tìm nhà trọ ở quận 1 hồ chí minh giá dưới 7 triệu",
+        "Tìm phòng trọ ở thanh xuân hà nội giá điện dưới 4000",
     ]
     for query in queries:
         try:
@@ -791,3 +737,4 @@ if __name__ == "__main__":
             print(f"Lỗi khi xử lý truy vấn: {str(e)}")
             import traceback
             traceback.print_exc()
+    

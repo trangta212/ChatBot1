@@ -1,0 +1,9 @@
+[
+  {
+    "query": "trọ ở quận bắc từ liêm giá giao động dưới 3 triệu có ban công",
+    "timestamp": "2025-06-18T13:54:47.338558",
+    "responses": {
+      "gemini": "Chào bạn 👋,\n\nTiếc quá 😥, hiện tại chỉ có một phòng trọ phù hợp một phần với yêu cầu của bạn thôi nè:\n\n*   **Phòng trọ tại ngõ 210 Hoàng Quốc Việt**: Giá 3 triệu/tháng. Phòng này có các tiện ích như kệ bếp, máy lạnh, máy giặt, tủ lạnh, giờ giấc tự do và có hầm để xe. Tuy nhiên, phòng này không có ban công bạn nha. Bạn có thể xem chi tiết tại đây: [http://localhost:3000/user/room-details/3447](http://localhost:3000/user/room-details/3447)\n\nVì không có phòng nào hoàn toàn khớp với yêu cầu của bạn, bạn có thể thử điều chỉnh tiêu chí tìm kiếm như tăng mức giá lên một chút hoặc chọn khu vực khác lân cận xem sao nhé 🥰. Chúc bạn sớm tìm được phòng ưng ý nha!"
+    }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm chung cư mini ở hà nội giá dưới 8 triệu",
+    "timestamp": "2025-06-22T15:50:32.987333",
+    "responses": {
+      "gemini": "Dưới đây là các lựa chọn phù hợp với yêu cầu của bạn:\n\n* C.chủ cho thuê CCMN-Hạ Đình, 35m2, Sleep box, full đồ, thang máy, ở ghép, chỉ 1,6 triệu/tháng: [chi tiết phòng](http://localhost:3000/user/room-details/5133)\n + Ưu điểm: Giá cả phải chăng, đầy đủ tiện ích, giờ giấc tự do\n + Nhược điểm: Địa chỉ ở Quận Thanh Xuân, không rõ diện tích căn hộ\n* Cho thuê căn hộ ở chung cư Thanh Hà - Hà Đông: [chi tiết phòng](http://localhost:3000/user/room-details/4867)\n + Ưu điểm: Địa chỉ ở Quận Hà Đông, có thể phù hợp với nhu cầu\n + Nhược điểm: Giá cao hơn so với lựa chọn 1, không có thông tin về tiện ích\n* 207 PHÙNG HƯNG - FULL NỘI THẤT - GẦN HỒ VĂN QUÁN - BỆNH VIỆN 103: [chi tiết phòng](http://localhost:3000/user/room-details/4115)\n + Ưu điểm: Căn hộ full nội thất, gần hồ và bệnh viện\n + Nhược điểm: Giá cao nhất trong 3 lựa chọn, không rõ giờ giấc\n\nLời khuyên: Nếu bạn muốn tiết kiệm tài chính, lựa chọn 1 có thể phù hợp với nhu cầu của bạn. Tuy nhiên, nếu bạn ưu tiên vị trí và tiện ích, lựa chọn 3 có thể là lựa chọn tốt hơn. Lựa chọn 2 có thể quá cao so với ngân sách của bạn."
+    }
+  }
+]

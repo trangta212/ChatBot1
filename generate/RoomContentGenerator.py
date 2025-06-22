@@ -20,10 +20,10 @@ class RoomContentGenerator:
         os.makedirs(output_dir, exist_ok=True)
         
         self.models = {
-            "gemini": {
-                "provider": "openrouter",
-                "model": "google/gemini-2.0-flash-exp:free"
-            },
+            # "gemini": {
+            #     "provider": "openrouter",
+            #     "model": "google/gemini-2.0-flash-exp:free"
+            # },
             # Có thể thêm các model khác
             # "claude": {
             #     "provider": "openrouter", 
@@ -33,6 +33,10 @@ class RoomContentGenerator:
             #     "provider": "openrouter",
             #     "model": "openai/gpt-4o-mini"
             # }
+             "gemini": {
+                "provider": "openrouter",
+                "model": "meta-llama/llama-3.3-8b-instruct:free"
+            },
         }
         
         self.results = []
@@ -46,9 +50,8 @@ class RoomContentGenerator:
 Nhiệm vụ của bạn là tạo ra những tiêu đề và mô tả CỰC KỲ HẤP DẪN, lôi cuốn khách hàng thuê phòng.
 
 Yêu cầu:
-- Tiêu đề: Ngắn gọn (tối đa 80 ký tự), nổi bật, tạo cảm giác khẩn cấp hoặc độc đáo
-- Mô tả: Chi tiết (150-300 từ), sinh động, tạo cảm xúc tích cực, nhấn mạnh lợi ích
-- Sử dụng từ ngữ tích cực, emoji phù hợp
+- Tiêu đề: Viết thật chuyên nghiệp, thu hút người đọc, tạo cảm giác nhanh chóng muốn thuê
+- Mô tả: Chi tiết sinh động, tạo cảm xúc tích cực, nhấn mạnh lợi ích
 - Tạo cảm giác "không thể bỏ lỡ"
 - Nhấn mạnh điểm mạnh, che đậy điểm yếu một cách khéo léo
 

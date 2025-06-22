@@ -1,0 +1,45 @@
+[
+  {
+    "room_info": {
+      "room_type": "chungcu",
+      "price": "1000000",
+      "area": "123",
+      "address": "Số 1, Đội Cấn, Ba Đình, Hà Nội",
+      "amenities": [
+        "Máy giặt",
+        "Tủ lạnh"
+      ],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "2000",
+      "water_bill": "20000"
+    },
+    "timestamp": "2025-06-18T14:03:51.806154",
+    "generated_content": {
+      "gemini": {
+        "title": "💎CCMN Đội Cấn 123m² - Full NT, Giá Sốc 1 Triệu! ⏰ Sắp Hết!",
+        "description": "🔥 WOW! Bạn đang tìm kiếm một căn hộ chung cư rộng rãi, đầy đủ tiện nghi với mức giá không thể tin được ngay tại trung tâm Ba Đình? Đừng bỏ lỡ cơ hội hiếm có này! 📍\n\n🏠 Căn hộ 123m² SIÊU RỘNG RÃI, thoáng đãng, thiết kế hiện đại, tối ưu hóa không gian sống. Nằm ngay vị trí VÀNG trên phố Đội Cấn, bạn dễ dàng di chuyển đến mọi địa điểm trong thành phố, gần trường học, bệnh viện, siêu thị và các khu vui chơi giải trí.\n\n✨ FULL NỘI THẤT CAO CẤP, chỉ cần xách vali vào ở ngay! Trang bị đầy đủ máy giặt, tủ lạnh, giường, tủ, bàn ghế... Tất cả đều mới tinh, đảm bảo bạn sẽ có một cuộc sống tiện nghi và thoải mái nhất.\n\n💰 GIÁ THUÊ CỰC ƯU ĐÃI: Chỉ 1.000.000 VNĐ/tháng! (Điện: 2000đ/KWh, Nước: 20.000đ/người). Một mức giá không tưởng cho một căn hộ tuyệt vời như vậy!\n\n🔒 AN TOÀN TUYỆT ĐỐI: Hệ thống an ninh 24/7, camera giám sát, đảm bảo bạn luôn an tâm khi sống tại đây.\n\n🔔 Đừng chần chừ! Số lượng căn hộ có hạn, CƠ HỘI CUỐI CÙNG để sở hữu một không gian sống lý tưởng với mức giá không thể tốt hơn. Liên hệ ngay hôm nay để được tư vấn và xem phòng trực tiếp! 📞 Nhanh tay kẻo lỡ!",
+        "generation_time": 6.380228042602539
+      }
+    }
+  },
+  {
+    "room_info": {
+      "room_type": "chungcumini",
+      "price": "4000000",
+      "area": "20",
+      "address": "Số 1, Hải Châu  I, Hải Châu, Đà Nẵng",
+      "amenities": [],
+      "furniture": "Đầy đủ",
+      "electricity_bill": "2000",
+      "water_bill": "100"
+    },
+    "timestamp": "2025-06-18T16:23:57.495172",
+    "generated_content": {
+      "gemini": {
+        "title": "💎CCMN Hải Châu - FULL Nội Thất, Vị Trí VÀNG! Sắp Hết Phòng!⏰",
+        "description": "🔥 KHÔNG THỂ TIN ĐƯỢC! Sở hữu ngay căn hộ mini FULL NỘI THẤT, diện tích 20m² tại trung tâm Hải Châu, Đà Nẵng! 📍 Vị trí VÀNG ngay số 1 Hải Châu I, dễ dàng di chuyển đến mọi điểm nóng của thành phố. \n\n✨ Bước vào căn hộ, bạn sẽ cảm nhận ngay sự TIỆN NGHI và HIỆN ĐẠI. FULL NỘI THẤT cao cấp, chỉ cần xách vali vào ở ngay! Không gian sống RỘNG RÃI, thoáng đãng, tràn ngập ánh sáng tự nhiên, mang đến cảm giác thư thái sau một ngày dài.\n\n🔒 AN TOÀN TUYỆT ĐỐI với hệ thống an ninh 24/7, camera giám sát, đảm bảo cuộc sống riêng tư và an tâm. Khu vực dân cư văn minh, yên tĩnh, lý tưởng cho sinh viên và người đi làm.\n\n💰 Giá thuê chỉ 4,000,000đ/tháng - quá hời cho một căn hộ mini đẳng cấp như thế này! Điện 2000đ/KWh, nước 100k/người.\n\n⏰ Đừng bỏ lỡ CƠ HỘI CUỐI CÙNG để sở hữu không gian sống lý tưởng này! SỐ LƯỢNG PHÒNG CÓ HẠN! Liên hệ ngay để được tư vấn và xem phòng!",
+        "generation_time": 5.061078071594238
+      }
+    }
+  }
+]

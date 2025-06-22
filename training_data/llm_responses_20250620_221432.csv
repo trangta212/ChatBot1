@@ -1,0 +1,10 @@
+query,timestamp,model,response
+tôi muốn tìm phòng trọ ở quận cầu giấy hà nội có giá dưới 4 triệu triệu có đầy đủ nội thất,2025-06-20T22:14:33.492560,gemini,"Góp ý gọn! 
+
+Chúng tôi đã tìm thấy một phòng phù hợp với yêu cầu của bạn! 
+
+Phòng ""Góc Pass Phòng - 3tr5 - 40m2 - 25 ngõ 259 yên hòa, cầu giấy, hà nội"" có địa chỉ tại quận Cầu Giấy, Hà Nội, với giá 3,5 triệu đồng/tháng. Phòng này có đầy đủ nội thất như kệ bếp, máy lạnh, máy giặt, tủ lạnh và còn cho thuê không chung chủ với giờ giấc tự do.
+
+Link phòng: http://localhost:3000/user/room-details/3816
+
+Đây có vẻ như là một lựa chọn tuyệt vời! Nếu bạn muốn xem thêm các lựa chọn khác, hãy cho tôi biết nhé!"

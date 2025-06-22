@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm phòng trọ ở hà nội có giá dưới 4 triệu và tiền điện dưới 4000 vnd ",
+    "timestamp": "2025-06-20T22:51:58.749018",
+    "responses": {
+      "gemini": "Phước nhé! 😊\n\nTôi đã tìm kiếm các phòng trọ phù hợp với yêu cầu của bạn. Dưới đây là các kết quả:\n\n* Phòng trọ nhà trọ ngõ 30 phú mỹ mỹ đình (http://localhost:3000/user/room-details/3779) - Giá: 1.200.000đ/tháng, Tiện ích: Có máy lạnh, Có hầm để xe\n* Cho thuê phòng trọ khép kín tại 41 ngõ 236 Khương đình (http://localhost:3000/user/room-details/4425) - Giá: 1.600.000đ/tháng, Tiện ích: Không có tiện ích mở rộng\n\nXin tiếc, nhưng phòng trọ số 3 không phù hợp với yêu cầu giá dưới 4 triệu.\n\nLời khuyên: Bạn có thể xem xét phòng trọ nhà trọ ngõ 30 phú mỹ mỹ đình nếu bạn muốn một phòng giá rẻ với tiện ích đầy đủ. Hoặc bạn có thể xem xét phòng trọ khép kín tại 41 ngõ 236 Khương đình nếu bạn ưu tiên một phòng với giá немного cao hơn nhưng không cần nhiều tiện ích. 🏠😊"
+    }
+  }
+]

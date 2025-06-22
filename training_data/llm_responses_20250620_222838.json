@@ -1,0 +1,9 @@
+[
+  {
+    "query": "Tôi muốn tìm nhà nguyên căn ở hồ chí minh có ban công giá dưới 5 tr ",
+    "timestamp": "2025-06-20T22:28:39.879158",
+    "responses": {
+      "gemini": "Chào bạn 👋! Mình thấy có 3 căn nhà nguyên căn có thể phù hợp với bạn đó nha:\n\n*   **Căn 1:** Đường Phạm Đăng Giảng, Bình Tân - Giá: 1,100,000đ/tháng (👉 [Chi tiết phòng](http://localhost:3000/user/room-details/5091))\n*   **Căn 2:** Đường Tô Hiệu, Tân Phú - Giá: 1,300,000đ/tháng (👉 [Chi tiết phòng](http://localhost:3000/user/room-details/3962))\n*   **Căn 3:** Rừng Sác, Cần Giờ - Giá: 1,500,000đ/tháng (👉 [Chi tiết phòng](http://localhost:3000/user/room-details/6293))\n\nTuy nhiên, cả 3 căn này đều không có thông tin về ban công 😔. Bạn nên xem kỹ chi tiết từng phòng để biết thêm thông tin nha. Nếu ban công là yếu tố quan trọng, bạn có thể thử tìm kiếm với các tiêu chí khác xem sao 😉. Chúc bạn sớm tìm được căn nhà ưng ý nha 🥰!\n"
+    }
+  }
+]

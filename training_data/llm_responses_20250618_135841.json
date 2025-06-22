@@ -1,0 +1,9 @@
+[
+  {
+    "query": "trọ dưới 3 triệu ở quận bắc từ liêm",
+    "timestamp": "2025-06-18T13:58:49.656549",
+    "responses": {
+      "gemini": "Chào bạn 👋,\n\nMình thấy có một phòng trọ có vẻ hợp với yêu cầu của bạn nè:\n\n*   **CHO THUÊ PHÒNG TRỌ TẠI NGÕ 210 HOÀNG QUỐC VIỆT**: Giá 3 triệu/tháng, có kệ bếp, máy lạnh, máy giặt, tủ lạnh, giờ giấc tự do, có hầm để xe, không chung chủ. 🥳 [http://localhost:3000/user/room-details/3447](http://localhost:3000/user/room-details/3447)\n\nTuy giá phòng hơi sát với mức bạn đưa ra, nhưng phòng này có rất nhiều tiện ích đó nha. Nếu bạn thấy ổn thì liên hệ xem phòng ngay thôi! Chúc bạn sớm tìm được phòng ưng ý! 🥰\n"
+    }
+  }
+]

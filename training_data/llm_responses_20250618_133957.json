@@ -1,0 +1,9 @@
+[
+  {
+    "query": "trọ ở quận hoàng mai, hà nội gía giao động 2 đến 3 triệu ",
+    "timestamp": "2025-06-18T13:40:06.451488",
+    "responses": {
+      "gemini": "Chào bạn 👋! Mình thấy có 2 phòng trọ ở Hoàng Mai, Hà Nội, giá từ 2 đến 3 triệu nè:\n\n*   **Phòng 1:** Ở Lĩnh Nam, giá 2.5 triệu, có điều hòa, nóng lạnh, giờ giấc tự do. Thích hợp cho bạn nào thích sự riêng tư đó nha 😉. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/3464).\n*   **Phòng 2:** Ở Hoàng Văn Thụ, giá 2.8 triệu, có gác, bếp, máy lạnh, máy giặt, tủ lạnh, không chung chủ, có hầm để xe. Phòng này tiện nghi hơn hẳn, phù hợp với bạn nào thích cuộc sống thoải mái, đầy đủ tiện nghi nè 🤩. Xem chi tiết tại [đây](http://localhost:3000/user/room-details/4986).\n\n**Lời khuyên:** Nếu bạn thích sự riêng tư và giá rẻ hơn thì chọn phòng 1. Còn nếu bạn muốn một nơi đầy đủ tiện nghi, không chung chủ thì phòng 2 là lựa chọn tuyệt vời đó 🥳!"
+    }
+  }
+]
